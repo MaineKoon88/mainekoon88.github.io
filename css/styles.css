@@ -354,6 +354,17 @@ padding: 2rem;
         .footer-clean .item.social > a {
           margin-top:40px;
         }
+        
+        .fab{
+
+          position: sticky;
+          float: left;
+          margin-bottom: 10px;
+          margin-left: 5px;
+        
+        }
+
+
       }
 
 
@@ -411,6 +422,17 @@ padding: 2rem;
 
 }
 
+
+.fab{
+
+  position: sticky;
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+}
+
+
  }
 
 
@@ -429,6 +451,16 @@ padding: 2rem;
     .header{
 padding: 2rem;
 
+    }
+
+
+    .fab{
+
+      position: sticky;
+      float: left;
+      margin-bottom: 10px;
+      margin-left: 5px;
+    
     }
 
 }
