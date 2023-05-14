@@ -123,7 +123,15 @@ padding-top: 10rem;
     font-size: 5rem ;
     color: var(--black);
     line-height: 1.8;
+    text-transform: uppercase;
    
+}
+
+.home .content span{
+
+  text-transform: uppercase;
+  color: var(--green);
+
 }
 
 .home .content p{
@@ -133,6 +141,78 @@ padding-top: 10rem;
     padding: 1rem 0;
    
 }
+
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+
+.heading span{
+
+  text-transform: uppercase;
+  color: var(--green);
+
+}
+
+.btn{
+
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  border: var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: .1s ease-in-out;
+
+
+}
+
+.btn:hover{
+color: #fff;
+background: var(--green);
+transition: .1s ease-in-out;
+
+}
+/*servicios*/
+
+.services .box-container{
+
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+
+
+
+}
+
+
+.services .box-container .box{
+
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 2.5rem;
+
+}
+
+/*fin servicios*/
+
+
+
+
+
+
 
 
 
