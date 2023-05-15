@@ -123,6 +123,7 @@ padding-bottom: 10rem;
 }
 .home .content{
     flex:1 1 45rem ;
+    padding-top: 4rem;
 }
 
 .home .content h3{
@@ -148,9 +149,16 @@ padding-bottom: 10rem;
    
 }
 
+.svg1 img{
+
+  box-shadow: 0 .5rem 1.5rem rgba(247, 242, 242, 0.2);
+
+}
+
 .services{
 
   padding-top: 7rem;
+  
 
 }
 
@@ -480,7 +488,7 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 80px;
+    width: 60px;
     height: 60px;
    }
 
@@ -534,7 +542,7 @@ padding: 2rem;
       
      .logo2{
       display: block;
-      width: 80px;
+      width: 60px;
       height: 60px;
      }
   
@@ -568,6 +576,9 @@ padding: 2rem;
     margin:2.5rem;
 
 }
+
+
+
 
 
 .fab{
@@ -611,9 +622,12 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 80px;
+    width: 60px;
     height: 60px;
    }
+ 
+   
+
 
     .fab{
 
