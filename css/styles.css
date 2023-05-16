@@ -209,6 +209,7 @@ transition: .1s ease-in-out;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  padding-top: 20px;
 
 
 
@@ -423,10 +424,10 @@ hr{
 
 
 
+/*cookie*/
 
 
-
-
+/*fin cookie*/
 
 
 
