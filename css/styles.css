@@ -59,8 +59,9 @@ section{
 .logo1 { 
     display: flex;
     float: left;
-    width: 500px; 
+    width: 371px; 
     height: 80px; 
+    margin-right: 50px;
     
 }
 
@@ -123,7 +124,7 @@ padding-bottom: 10rem;
 }
 .home .content{
     flex:1 1 45rem ;
-    padding-top: 4rem;
+    padding-top: 20rem;
 }
 
 .home .content h3{
@@ -149,11 +150,9 @@ padding-bottom: 10rem;
    
 }
 
-
 .services{
 
   padding-top: 7rem;
-  
 
 }
 
@@ -199,6 +198,8 @@ transition: .1s ease-in-out;
 
 }
 /*servicios*/
+
+
 
 .services .box-container{
 
@@ -250,6 +251,57 @@ transition: .1s ease-in-out;
 
 /*fin servicios*/
 
+/*about*/
+
+.about .heading{
+  padding-top: 15rem;
+}
+
+.about .row{
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  
+
+}
+
+.about .row .image{
+flex: 1 1 45rem;
+
+
+}
+
+.about .row .image img{
+  width: 100%;
+  
+  
+  }
+
+  .about .row .content{
+    flex: 1 1 45rem;
+    
+    
+    }
+
+    .about .row .content h3{
+      color: var(--black);
+      font-size: 4rem;
+      line-height: 1.8;
+      
+      }
+  
+      .about .row .content p{
+        color: var(--grey);
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        
+        }
+
+/*fin about*/
 
 
 
@@ -260,6 +312,8 @@ transition: .1s ease-in-out;
 
 
 /*footer*/
+
+
 
 hr{
 
@@ -483,7 +537,7 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 60px;
+    width: 70px;
     height: 60px;
    }
 
@@ -537,7 +591,7 @@ padding: 2rem;
       
      .logo2{
       display: block;
-      width: 60px;
+      width: 70px;
       height: 60px;
      }
   
@@ -571,9 +625,6 @@ padding: 2rem;
     margin:2.5rem;
 
 }
-
-
-
 
 
 .fab{
@@ -617,12 +668,9 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 60px;
+    width: 70px;
     height: 60px;
    }
- 
-   
-
 
     .fab{
 
