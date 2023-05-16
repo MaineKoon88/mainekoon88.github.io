@@ -40,6 +40,8 @@ section{
     padding: 2rem 9%;
 }
 
+
+
 /*header*/
 
 .header{
@@ -113,6 +115,7 @@ padding-bottom: 10rem;
 
 .image{
     padding-top: 150px;
+    
    
 }
 
@@ -254,7 +257,8 @@ transition: .1s ease-in-out;
 /*about*/
 
 .about .heading{
-  padding-top: 15rem;
+  padding-top: 12rem;
+  font-size: 5rem;
 }
 
 .about .row{
@@ -272,6 +276,7 @@ transition: .1s ease-in-out;
 flex: 1 1 45rem;
 
 
+
 }
 
 .about .row .image img{
@@ -282,7 +287,7 @@ flex: 1 1 45rem;
 
   .about .row .content{
     flex: 1 1 45rem;
-    
+   
     
     }
 
@@ -338,7 +343,7 @@ hr{
   .footer-clean ul {
     padding:0;
     list-style:none;
-    line-height:1.6;
+    line-height:1.8;
     font-size:14px;
     margin-bottom:0;
   }
@@ -379,6 +384,7 @@ hr{
   .copyright{
 
     margin-top: 15px;
+    margin-right: 15px;
 
   }
 
@@ -537,7 +543,7 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 70px;
+    width: 60px;
     height: 60px;
    }
 
@@ -591,10 +597,12 @@ padding: 2rem;
       
      .logo2{
       display: block;
-      width: 70px;
+      width: 60px;
       height: 60px;
      }
   
+    
+
 
 .header .navbar{
 
@@ -668,7 +676,7 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 70px;
+    width: 60px;
     height: 60px;
    }
 
