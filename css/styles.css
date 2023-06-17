@@ -811,13 +811,13 @@ iframe {
   align-items: center;
   padding: 15px;
   background: 0 0;
-  position: relative;
-  z-index: 1
+  position: absolute;
+  
 }
 
 .contact100-map {
   position: absolute;
-  z-index: -2;
+  
   width: 100%;
   height: 100%;
   top: 0;
@@ -839,7 +839,7 @@ iframe {
 .contact100-form-title {
   width: 100%;
   position: relative;
-  z-index: 1;
+  background-color: #2ecc71;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -858,7 +858,7 @@ iframe {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #fff;
+  color: var(--black);
   line-height: 1.2;
   text-align: center;
   padding-bottom: 7px
@@ -867,7 +867,7 @@ iframe {
 .contact100-form-title-2 {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  color: #fff;
+  color: var(--black);
   line-height: 1.5;
   text-align: center
 }
@@ -949,7 +949,7 @@ iframe {
   -o-transition: all .6s;
   -moz-transition: all .6s;
   transition: all .6s;
-  background: #57b846;
+  background: var(--green);
 }
 
 input.input100 {
@@ -981,7 +981,8 @@ textarea.input100 {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 8px
+  padding-top: 8px;
+  
 }
 
 .contact100-form-btn {
@@ -995,7 +996,7 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 50px;
-  background-color: #57b846;
+  background-color: var(--green);
   border-radius: 25px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -1004,18 +1005,18 @@ textarea.input100 {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   -moz-transition: all .4s;
-  transition: all .4s
+  transition: all .4s;
 }
 
 .contact100-form-btn i {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   -moz-transition: all .4s;
-  transition: all .4s
+  transition: all .4s;
 }
 
 .contact100-form-btn:hover {
-  background-color: #333
+  background-color:  #922b21 ;
 }
 
 .contact100-form-btn:hover i {
@@ -1023,7 +1024,7 @@ textarea.input100 {
   -moz-transform: translateX(10px);
   -ms-transform: translateX(10px);
   -o-transform: translateX(10px);
-  transform: translateX(10px)
+  transform: translateX(10px);
 }
 
 
@@ -1639,6 +1640,11 @@ padding: 2rem;
   padding: 43px 15px 57px 117px
 }
 
+
+.map iframe{
+  margin: 0 auto;
+  width: 100%;
+}
 }
 
 
@@ -1744,5 +1750,9 @@ padding: 2rem;
     padding: 0 5px
 }
 
+.map iframe{
+  margin: 0 auto;
+  width: 100%;
+}
 
 }
