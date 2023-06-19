@@ -6,6 +6,7 @@
     --blue:  #2471a3 ;
     --black:  #17202a ;
     --grey:  #424a54 ;
+    --orange:#d35400;
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.5rem .5rem 0 rgba(0, 0, 0, .2);
     --border:.2rem solid var(--blue);
@@ -864,6 +865,7 @@ iframe {
   line-height: 1.2;
   text-align: center;
   padding-bottom: 7px;
+  color: var(--orange);
   
   
 }
@@ -875,6 +877,7 @@ iframe {
   line-height: 1.5;
   text-align: center;
   text-transform: none;
+  color: var(--orange);
 }
 
 .contact100-form-title::before {
@@ -1515,8 +1518,8 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 80px;
    }
 
    .lottie{
@@ -1611,8 +1614,8 @@ padding: 2rem;
       
      .logo2{
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 200px;
+      height: 80px;
      }
   
     
@@ -1703,9 +1706,7 @@ padding: 2rem;
   display: none;
 }
 
-.box-form-container .contact-container{
-  grid-template-columns: repeat(1fr);
-}
+
 
 .contact100-form {
   padding: 43px 15px 57px 117px
@@ -1751,8 +1752,8 @@ padding: 2rem;
     
    .logo2{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 80px;
    }
 
     .fab{
@@ -1806,10 +1807,7 @@ padding: 2rem;
     display: none;
   }
 
-  .box-form-container .contact-container{
-    margin: 0 auto;
-    grid-template-columns: repeat(1fr);
-  }
+ 
   
 
   .contact100-form {
@@ -1841,4 +1839,12 @@ iframe{
 
 }
 
+.container-contact100-form-btn{
+  margin-left: 1rem;
+}
+
+
+.contact100-form-btn{
+  margin-left: 1rem;
+}
 }
