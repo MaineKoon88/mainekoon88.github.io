@@ -1852,4 +1852,12 @@ iframe{
 .contact100-form-btn{
   margin-left: 1rem;
 }
+
+.col-lg-3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
 }
