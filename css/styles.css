@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 
@@ -364,11 +365,80 @@ flex: 1 1 45rem;
 
 
 
+/*cards*/
+.card {
+  
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin:  56px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+  0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  width: 100%;
+  transform: scale(1.2);
+}
+
+.names {
+  padding-top: 10rem;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  
+}
+
+.card p{
+ text-align: center;
+}
+
+.prof{
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/*cards*/
+
+
 /*tarjetas*/
 
 .container-staff{
- 
-    padding-left: 250px;
+
+    padding-top: 6rem; 
+    
     
   
 }
@@ -1301,7 +1371,78 @@ hr{
 
 
 /*cookie*/
+#cookiePopup {
+  background-color: #ffffff;
+  position: fixed;
+  font-size: 14px;
+  width: 70vw;
+  max-width: 42.85em;
+  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 2em 1.4em;
+  border-radius: 6px;
+  transition: all 0.5s ease-in;
+  z-index: 3;
+}
 
+#cookiePopup img {
+  display: block;
+  width: 3.75em;
+  transform: translateZ(0);
+  position: relative;
+  margin: auto;
+}
+
+#cookiePopup p {
+  text-align: center;
+  margin: 1.4em 0;
+}
+
+#cookiePopup button {
+  background-color: #6859fe;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 1em 1.4em;
+  display: block;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#cookiePopup a {
+  color: #6859fe;
+}
+
+.hide {
+  visibility: hidden;
+  bottom: 0;
+  left: 2em;
+}
+
+.show {
+  visibility: visible;
+  bottom: 2em;
+  left: 2em;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 100%;
+  }
+  
+  .hide {
+    bottom: 2em;
+    left: 0;
+  }
+  
+  .show {
+    left: 0;
+    bottom: 0;
+  }
+}
 
 /*fin cookie*/
 
@@ -1574,7 +1715,9 @@ padding: 2rem;
       }
 
     
-
+      .card{
+        margin-left: 45px;
+      }
 
 
       }
@@ -1720,6 +1863,10 @@ padding: 2rem;
   margin: 0 auto;
   width: 100%;
 }
+
+.card{
+  margin-left: 45px;
+}
 }
 
 
@@ -1779,11 +1926,7 @@ padding: 2rem;
     }
 
 
-    .container-staff{
- 
-      padding-left: 0;
-    
-  }
+   
 
   .container-cv{
     display: none;
@@ -1860,4 +2003,7 @@ iframe{
   padding-top: 3rem;
 }
 
+ .card{
+  margin-left: 45px;
+}
 }
