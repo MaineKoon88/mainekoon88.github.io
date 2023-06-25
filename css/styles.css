@@ -1856,6 +1856,10 @@ padding: 2rem;
     margin: 0 auto;
    }
 
+   .home1 .construct h3{
+    font-size: 40px;
+   }
+
     .fab{
 
       position: sticky;
