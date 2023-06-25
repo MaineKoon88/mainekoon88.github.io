@@ -163,13 +163,22 @@ padding-bottom: 10rem;
 
 /*construccion*/
 
-.home .construct{
+.home1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  }
+
+.home1 .construct{
   flex:1 1 45rem ;
   padding-top: 20rem;
   
 }
 
-.home .construct h3{
+.home1 .construct h3{
   font-size: 5rem ;
   color: var(--black);
   line-height: 1.8;
@@ -178,14 +187,14 @@ padding-bottom: 10rem;
  
 }
 
-.home .construct span{
+.home1 .construct span{
 
 text-transform: uppercase;
 color: var(--green);
 
 }
 
-.home .construct p{
+.home1 .construct p{
   font-size: 2rem ;
   color: var(--grey);
   line-height: 1.8;
@@ -1840,6 +1849,11 @@ padding: 2rem;
     display: block;
     width: 200px;
     height: 80px;
+   }
+
+   .home1{
+    display: block;
+    margin: 0 auto;
    }
 
     .fab{
