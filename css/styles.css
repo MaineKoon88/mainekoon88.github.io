@@ -796,7 +796,7 @@ iframe {
 }
 
 .contact100-form-title {
-  width: 100%;
+ 
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1886,21 +1886,45 @@ padding: 2rem;
       box-shadow: none;
       background-color: #fff;
       margin: 0 auto;
+
     }
 .container-cv i{
   display: none;
 }
 
 .container-cv h1{
-  text-align: justify;
-  translate: -20%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  translate: -5%;
 }
     .container-cv .name {
       border-left: none;
-      text-align: justify;
+     }
+     .container-cv .name .surname{
+      translate: -10%;
+     }
+    .project  {
+      border-left: none;
+      text-align: left;
+      
+      padding: 0 0 ;
       
       
     }
+    .project h2{
+      text-align: center;
+      text-decoration: underline;
+    }
+    .project .des {
+      border-left: none;
+      text-align: left;
+       }
+
+       .project h4{
+        text-decoration: none;
+       }
 
     .container-cv .name .specialize{
       text-align: center;
@@ -1910,6 +1934,7 @@ padding: 2rem;
     .experience{
       text-align: center;
       font-size: large;
+      
     }
 
      
@@ -1941,6 +1966,12 @@ padding: 2rem;
 }
   .wrap-contact100{
     width: auto;
+  }
+  .contact100-form-title{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: fit-content;
   }
 .label-input100 {
     text-align: left;
