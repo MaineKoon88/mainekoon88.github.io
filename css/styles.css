@@ -1407,17 +1407,13 @@ hr{
   color: #fff;
   font-size: 24px;
   overflow: hidden;
+  padding-top: 5rem;
 }
 
-.lottie4{
-
-padding-top: 10rem;
-
-
-}
 .parallax h1{
   font-size: 70px;
   padding-bottom: 30rem;
+  padding-top: 10rem;
 
 }
 
@@ -1459,6 +1455,12 @@ padding-top: 10rem;
   transition: all 2s;
 }
 .hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 2s;
+}
+.hidden3 {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(100%);
@@ -1958,7 +1960,9 @@ padding: 2rem;
     display: none;
   }
 
- 
+  .container-staff{
+    padding-right: 2rem;
+  }
   
 
   .contact100-form {
@@ -1983,11 +1987,13 @@ padding: 2rem;
 }
 
 .map{
+ 
   
   position: relative;
-    left: 50%;
-    transform: translateX(-56%);
-    text-align: center;
+  translate: -10%;
+  
+    
+   
 }
 
 .fab{
