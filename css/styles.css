@@ -953,6 +953,10 @@ textarea.input100 {
   
 }
 
+.error-message {
+  color: red;
+}
+
 .contact100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -996,7 +1000,7 @@ textarea.input100 {
 }
 
 .validate-input {
-  position: relative
+  position: relative;
 }
 
 .alert-validate::before {
@@ -1015,7 +1019,7 @@ textarea.input100 {
   transform: translateY(-50%);
   right: 2px;
   pointer-events: none;
-  font-family: Poppins-Medium;
+  font-family: "Font Awesome Free";
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -1025,11 +1029,11 @@ textarea.input100 {
   -webkit-transition: opacity .4s;
   -o-transition: opacity .4s;
   -moz-transition: opacity .4s;
-  transition: opacity .4s
+  transition: opacity .4s;
 }
 
 .alert-validate::after {
-  content: "\f06a";
+  content: "\f071";
   font-family: FontAwesome;
   display: block;
   position: absolute;
@@ -1044,10 +1048,11 @@ textarea.input100 {
   right: 8px;
 }
 
-.alert-validate:hover:before {
+.alert-validate.show-alert:before {
   visibility: visible;
   opacity: 1;
 }
+
 
 /*fin contacto*/
 /*ubicacion*/
@@ -2007,6 +2012,10 @@ padding: 2rem;
 
 .container-contact100-form-btn{
   margin-left: 1rem;
+}
+.container-contact100-form-btn p{
+  text-align: center;
+  font-size: 8px;
 }
 
 
