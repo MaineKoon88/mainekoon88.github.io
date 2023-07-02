@@ -1401,31 +1401,34 @@ hr{
 /*parallax*/
 
 .parallax {
-  height: 1200px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto; 
+  background-color:  #17202a ;
+  text-align: center;
   display: grid;
   place-items: center;
   align-content: center;
   color: #fff;
   font-size: 24px;
   overflow: hidden;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  
 }
 
 .parallax h1{
   font-size: 70px;
-  padding-bottom: 30rem;
-  padding-top: 10rem;
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  text-transform: none;
 
 }
 
-.oscuro {
-  
-  background-color:  #17202a ;
+.parallax p{
+  text-transform: none;
 }
+.parallax span{
+  color: var(--green);
+}
+
 
 .claro {
   
@@ -1452,25 +1455,78 @@ hr{
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
+  text-transform: lowercase;
+  
+  
 }
-.vector {
+
+.hidden2 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
+  text-transform: lowercase;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  
 }
-.hidden2 {
+
+.aneu1{
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: all 2s;
+  text-align: center;
+  
 }
-.hidden3 {
+
+.aneu2{
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: all 2s;
+  text-align: center;
+  
 }
+
+
+
+.container5c {
+  display: flex;
+  align-items: center;
+  translate: 60px;
+}
+.container5c1 {
+  display: flex;
+  align-items: center;
+  translate: 60px;
+}
+
+.animation {
+  flex: 1;
+  margin-left: 200px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: right;
+}
+
+.label {
+  flex: 1;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: left;
+  margin-right: 500px;
+}
+
+
+
 
 @media(prefers-reduced-motion){
   .hidden {
@@ -1671,6 +1727,43 @@ padding: 2rem;
         margin-left: 45px;
       }
 
+      .parallax{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        
+      }
+
+      .parallax .container5c1 .label{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        translate: -60px;
+        
+      
+      }
+
+      .parallax .container5c .label{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        translate: -60px;
+        
+      
+      }
+      .parallax .container5c .animation{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        translate: -60px;
+      }
+      .parallax .container5c1 .animation{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        translate: -60px;
+      }
+
 
       }
 
@@ -1818,6 +1911,44 @@ padding: 2rem;
 
 .card{
   margin-left: 45px;
+}
+
+.parallax{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+
+.parallax .container5c1 .label{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  translate: -60px;
+  
+
+}
+
+.parallax .container5c .label{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  translate: -60px;
+  
+
+}
+.parallax .container5c .animation{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  translate: -60px;
+}
+.parallax .container5c1 .animation{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  translate: -60px;
 }
 }
 
@@ -2037,6 +2168,41 @@ padding: 2rem;
 .modalck{
   margin-top: 100px;
   padding-top: 50px;
+}
+
+.parallax{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.parallax .container5c1 .label{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  translate: -60px;
+  
+
+}
+
+.parallax .container5c1 .animation{
+  display: none;
+
+}
+
+.parallax .container5c .label{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  translate: -60px;
+  
+
+}
+
+.parallax .container5c .animation{
+  display: none;
+
 }
 
 }
