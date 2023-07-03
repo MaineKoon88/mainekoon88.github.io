@@ -19,7 +19,9 @@
 
 }
 
-
+.rings{
+  z-index: 3;
+}
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -1210,7 +1212,22 @@ textarea.input100 {
 
 
 /*footer*/
+.blob{
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  z-index: 3;
+  transform: translateY(-160px);
+  
+}
 
+.wave{
+  display: block;
+  margin: 0 auto;
+  transform: translateY(167px);
+  
+}
 
 
 hr{
@@ -1275,14 +1292,18 @@ hr{
   }
 
   .copyright{
-
+    display: block;
     margin-top: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
     padding-top: 5rem;
     font-size: 15px;
+    text-transform: none;
 
   }
 
+.planet{
+  color: #d35400  ;
+}
 
 
 
@@ -1401,8 +1422,9 @@ hr{
 /*parallax*/
 
 .parallax {
-  height: auto; 
-  background-color:  #17202a ;
+  height: auto;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(36,113,163,1) 50%, rgba(23,32,42,1) 100%); 
   text-align: center;
   display: grid;
   place-items: center;
@@ -1411,8 +1433,8 @@ hr{
   font-size: 24px;
   overflow: hidden;
   padding-top: 2rem;
-  
 }
+
 
 .parallax h1{
   font-size: 70px;
@@ -1427,6 +1449,7 @@ hr{
 }
 .parallax span{
   color: var(--green);
+  font-weight: bold;
 }
 
 
@@ -1436,7 +1459,8 @@ hr{
 }
 
 .contenido {
-  background-color: #fff;
+  background: rgb(23,32,42);
+background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%, rgba(255,255,255,1) 100%); 
   padding: 40px;
   text-align: center;
 }
@@ -2203,6 +2227,12 @@ padding: 2rem;
 .parallax .container5c .animation{
   display: none;
 
+}
+
+.wave{
+  display: block;
+  margin: 0 auto;
+  translate: -110px;
 }
 
 }
