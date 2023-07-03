@@ -1288,6 +1288,11 @@ hr{
   color: #d35400  ;
 }
 
+.wave{
+  display: block;
+  margin: 0 auto;
+}
+
 
 
 /*fin footer*/
