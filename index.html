@@ -686,7 +686,8 @@
     <div class="form-back">
         <h1 class="heading"> <span style="color:#2ecc71 ">Escri</span>binos</h1>
         <div class="wrap-contact100">
-            <div class="contact100-form-title">
+            <div class="contact100-form-title" style="background-image: url(img/contact2.svg); width: 90%; height: 300px; ">
+                
                 
             </div>
             <form class="contact100-form validate-form">
@@ -857,27 +858,9 @@
   </script>
 
 <!--Fin Modal CV-->
-<!--circular-->
-<script>
-    function stringify(obj) {
-  let cache = [];
-  let str = JSON.stringify(obj, function(key, value) {
-    if (typeof value === "object" && value !== null) {
-      if (cache.indexOf(value) !== -1) {
-        // Circular reference found, discard key
-        return;
-      }
-      // Store value in our collection
-      cache.push(value);
-    }
-    return value;
-  });
-  cache = null; // reset the cache
-  return str;
-}
-</script>
 
 
+<!--SMTP-->
 
 
 
