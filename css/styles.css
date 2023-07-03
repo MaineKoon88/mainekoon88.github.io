@@ -1211,12 +1211,6 @@ textarea.input100 {
 /*footer*/
 
 
-.wave{
-  display: block;
-  margin: 0 auto;
-  transform: translateY(167px);
-  
-}
 
 
 hr{
@@ -2220,16 +2214,6 @@ padding: 2rem;
 
 }
 
-.wave{
-  display: block;
-  margin: 0 auto;
-  translate: -110px;
-}
 
-.hide{
-   width: auto;
-   display: block;
-   margin: 0 auto;
-}
 
 }
