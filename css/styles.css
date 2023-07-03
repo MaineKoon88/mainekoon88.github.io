@@ -19,9 +19,6 @@
 
 }
 
-.rings{
-  z-index: 3;
-}
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -1212,15 +1209,7 @@ textarea.input100 {
 
 
 /*footer*/
-.blob{
-  width: 400px;
-  height: 400px;
-  display: block;
-  margin: 0 auto;
-  z-index: 3;
-  transform: translateY(-160px);
-  
-}
+
 
 .wave{
   display: block;
@@ -2122,6 +2111,8 @@ padding: 2rem;
 
   .container-staff{
     padding-right: 2rem;
+    display: block;
+    margin: 0 auto;
   }
   
 
@@ -2233,6 +2224,12 @@ padding: 2rem;
   display: block;
   margin: 0 auto;
   translate: -110px;
+}
+
+.hide{
+   width: auto;
+   display: block;
+   margin: 0 auto;
 }
 
 }
