@@ -78,6 +78,11 @@ section{
 display: none;
 
 }
+
+.header .navbar{
+  transform: translateX(50px);
+}
+
 .header .navbar a{
 
     font-size: 1.8rem;
@@ -1052,9 +1057,14 @@ textarea.input100 {
   opacity: 1;
 }
 
+.contacto{
+  padding-bottom: 20rem;
+}
+
 
 /*fin contacto*/
 /*ubicacion*/
+
 .map iframe{
   display: flex;
   align-self: center;
@@ -1073,6 +1083,7 @@ textarea.input100 {
   text-align: center; /* Centra el contenido */
   padding-top: 5rem;
   font-size: 14px;
+  text-transform: none;
 }
 
 .contact-info i {
@@ -1083,6 +1094,8 @@ textarea.input100 {
 
 
 /*fin ubicacion*/
+
+
 
 
 /*modal*/
@@ -1291,6 +1304,7 @@ hr{
 .wave{
   display: block;
   margin: 0 auto;
+  transform: translateY(64px);
 }
 
 
@@ -1409,6 +1423,8 @@ hr{
 
 /*parallax*/
 
+/*
+
 .parallax {
   height: auto;
   background: rgb(255,255,255);
@@ -1422,6 +1438,20 @@ hr{
   overflow: hidden;
   padding-top: 2rem;
 }
+*/
+.parallax {
+  height: auto;
+  background-color: #17202a;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  color: #fff;
+  font-size: 24px;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
 
 
 .parallax h1{
@@ -2225,6 +2255,19 @@ padding: 2rem;
   height: 280px;
   width: 280px;
   
+}
+
+#maps{
+  display: block;
+  background-size: cover;
+}
+
+.contact-info{
+  color: #fff;
+}
+
+.contact-info i{
+  color: #fff;
 }
 
 }
