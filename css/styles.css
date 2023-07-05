@@ -272,53 +272,41 @@ transition: .1s ease-in-out;
 
 
 
-.services .box-container{
-
+.box-container {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
   padding-top: 20px;
-
-
-
 }
 
-
-.services .box-container .box{
-
+.box {
   background: #fff;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
   border: var(--border);
   padding: 2.5rem;
-
+ 
 }
 
-.services .box-container .box i{
 
-     color: var(--green);
-     font-size: 5rem;
-     padding-bottom: .5rem;
 
+.box i {
+  color: var(--green);
+  font-size: 5rem;
+  padding-bottom: .5rem;
 }
 
-.services .box-container .box h3{
-
-    color: var(--black);
-    font-size: 2.5rem;
-    padding: 1rem 0;
-
+.box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding: 1rem 0;
 }
 
-.services .box-container .box p{
-
+.box p {
   color: var(--grey);
   font-size: 1.5rem;
-  line-height:2 ;
-
+  line-height: 2;
 }
-
-
 
 
 /*fin servicios*/
@@ -1084,14 +1072,12 @@ textarea.input100 {
   padding-top: 5rem;
   font-size: 14px;
   text-transform: none;
-  color: #fff;
-  
 }
 
 .contact-info i {
   font-size: 24px; /* Ajusta el tamaño del ícono */
   margin-right: 10px; /* Añade un espacio entre el ícono y el texto */
-  color: #fff;
+  color: var(--black);
 }
 
 
@@ -2055,6 +2041,11 @@ padding: 2rem;
       height: 380px;
     }
     
+
+   .box-container{
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   }
+
 
     .modal{
       margin-top: 100px;
