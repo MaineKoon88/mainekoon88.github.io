@@ -321,57 +321,45 @@ transition: .1s ease-in-out;
   font-size: 5rem;
 }
 
-.about .row{
-
+.about .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  
-  
-
 }
 
-.about .row .image{
-flex: 1 1 45rem;
-
-
-
+.about .row .image {
+  flex: 1 1 45rem;
 }
 
-.about .row .image img{
+.about .row .image lottie-player {
   width: 100%;
-  
-  
-  }
+}
 
-  .about .row .content{
-    flex: 1 1 45rem;
-   
-    
-    }
+.about .row .content {
+  flex: 1 1 45rem;
+}
 
-    .about .row .content h3{
-      color: var(--black);
-      font-size: 4rem;
-      line-height: 1.8;
-      
-      }
-  
-      .about .row .content p{
-        color: var(--grey);
-        padding: 1rem 0;
-        font-size: 1.5rem;
-        line-height: 1.8;
-        
-        }
+.about .row .content h3 {
+  color: var(--black);
+  font-size: 4rem;
+  line-height: 1.8;
+}
+
+.about .row .content p {
+  color: var(--grey);
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
 
 /*fin about*/
 
 
 
 /*cards*/
-.card {
+.cards {
   
   position: relative;
   width: 300px;
@@ -386,7 +374,7 @@ flex: 1 1 45rem;
   align-items: center;
 }
 
-.card-image {
+.cards-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -399,7 +387,7 @@ flex: 1 1 45rem;
   0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.card-image img {
+.cards-image img {
   width: 100%;
   transform: scale(1.2);
 }
@@ -414,7 +402,7 @@ flex: 1 1 45rem;
   
 }
 
-.card p{
+.cards p{
  text-align: center;
 }
 
@@ -1753,7 +1741,7 @@ padding: 2rem;
       }
 
     
-      .card{
+      .cards{
         margin-left: 45px;
       }
 
@@ -1939,7 +1927,7 @@ padding: 2rem;
   width: 100%;
 }
 
-.card{
+.cards{
   margin-left: 45px;
 }
 
@@ -2198,7 +2186,7 @@ padding: 2rem;
   padding-top: 3rem;
 }
 
- .card{
+ .cards{
   margin-left: 45px;
 }
 
