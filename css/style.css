@@ -3,6 +3,7 @@
 
 
 :root{
+  --green:  #2ecc71 ;
   --blue:  #2471a3 ;
   --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
   --border:.2rem solid var(--blue);
@@ -12,6 +13,10 @@
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .slide-content{
   margin: 0 40px;
@@ -21,8 +26,7 @@
 .card{
   border-radius: 25px;
   background-color: #FFF;
-  box-shadow: var(--box-shadow);
-  border: var(--border);
+  
 }
 .image-content,
 .card-content{
@@ -104,24 +108,33 @@
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-  color: #4070F4;
+  color: var(--green)
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
   font-size: 35px;
 }
 .swiper-button-next{
-  right: 0;
+  right: 10px;
 }
 .swiper-button-prev{
-  left: 0;
+  left: 10px;
 }
+
+
+
+
 .swiper-pagination-bullet{
   background-color: #6E93f7;
   opacity: 1;
+  
+  
+  
+  
 }
 .swiper-pagination-bullet-active{
   background-color: #2471a3;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -130,5 +143,7 @@
   }
   .swiper-navBtn{
     display: none;
+    right: 10px;
+    left: 10px;
   }
 }

@@ -71,6 +71,7 @@ section{
     width: 371px; 
     height: 80px; 
     margin-right: 50px;
+    transform: translateX(-30px);
     
 }
 
@@ -1417,7 +1418,6 @@ hr{
 */
 .parallax {
   height: auto;
-  background-color: #17202a;
   text-align: center;
   display: grid;
   place-items: center;
@@ -1426,6 +1426,12 @@ hr{
   font-size: 24px;
   overflow: hidden;
   padding-top: 2rem;
+  min-height: 500px;
+  background-image: url("../img/neurology.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -1528,7 +1534,7 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
   margin-left: 200px;
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
+  transform: translateX(50%);
   transition: all 2s;
   text-align: right;
 }
@@ -1571,7 +1577,44 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 /*---------------------Fin Seccion Neuro----------------------------------*/
 
 
+/*----------------------Seccion Ozono-------------------------------*/
+.parallax2 {
+  height: auto;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  color: var(--black);
+  font-size: 24px;
+  overflow: hidden;
+  padding-top: 2rem;
+  min-height: 500px;
+  background-image: url("../img/ozonowall2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+
+
+.parallax2 h1{
+  font-size: 70px;
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  text-transform: none;
+
+}
+
+.parallax2 p{
+  text-transform: none;
+}
+.parallax2 span{
+  color: var(--green);
+  font-weight: bold;
+}
+
+/*---------------------Fin seccion Ozono---------------------------*-
 
 
 
