@@ -80,6 +80,66 @@ display: none;
 
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  width: 20rem;
+  height: 44rem;
+  background: #fff;
+  border: var(--border);
+  text-align: center;
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(10px);
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  font-size: 14px;
+  font-weight: bold;
+  transform: translateX(5px);
+  transform: translateY(1px);
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown .dropbtn:focus + .dropdown-content {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-right: 25px;
+}
+
+
+
+
+
+
+
+
 .header .navbar{
   transform: translateX(50px);
 }
@@ -132,6 +192,11 @@ padding-bottom: 10rem;
    
 }
 
+.lottie2{
+  padding-top: 5px;
+  
+ 
+}
 
 
 .home .content{
@@ -935,6 +1000,9 @@ textarea.input100 {
 }
 
 .error-message {
+  display: none;
+  font-size: 18px;
+  margin-top: 10px;
   color: red;
 }
 
@@ -1038,6 +1106,19 @@ textarea.input100 {
   padding-bottom: 20rem;
 }
 
+.fa {
+  /* Asegúrate de que tienes la clase "fa" para los iconos de Font Awesome */
+  font-family: "Font Awesome";
+}
+
+.button-loading {
+  animation: spin 1s linear infinite;
+}
+
+.button-loading {
+  cursor: progress;
+  pointer-events: none;
+}
 
 /*fin contacto*/
 /*ubicacion*/
@@ -1715,9 +1796,63 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
     }
 
 
+    .header .navbar{
+
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      top: 50px;
+      left: -115%;
+      text-align: center;
+      display: block;
+      margin: 50px 0;
+      line-height: 40px;
+  
+  
+  }
+  
+  .header .navbar.active{
+      transform: scale(1);
+      opacity: 1;
+      transition: .1s ease-in-out;
+      left: 0;
+      
+  }
+  
+  .header .navbar a{
+  
+      font-size: 4rem;
+      display:block;
+      margin:50px 0;
+      left: -100% ;
+  
+  }
+  .dropdown-content {
+    /* Estilos adicionales */
+    max-height: none;
+    overflow-y: auto;
+    padding: 0;
+    width: 900px;
+    transform: translateX(-50%);
+    
+    
+  }
+  .dropdown-content a {
+    margin: 10px;
+  }
+
+  #menu-btn{
+    display: initial;
+}
+
     .header{
 padding: 2rem;
 
+    }
+
+    .header .navbar{
+      transform: translateX(-20px);
     }
 
     .logo1{
@@ -1874,17 +2009,17 @@ padding: 2rem;
 
 .header .navbar{
 
-    position: absolute;
-    top: 115%; right: 2rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    width: 30rem;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
     background: #fff;
-    border: var(--border);
-    transform: scale(0);
-    opacity: 0;
-    transform-origin: top right;
-    transition: none;
+    top: 50px;
+    left: -115%;
+    text-align: center;
+    display: block;
+    margin: 50px 0;
+    line-height: 40px;
+
 
 }
 
@@ -1892,13 +2027,16 @@ padding: 2rem;
     transform: scale(1);
     opacity: 1;
     transition: .1s ease-in-out;
+    left: 0;
+    
 }
 
 .header .navbar a{
 
-    font-size: 3rem;
+    font-size: 4rem;
     display:block;
-    margin:2.5rem;
+    margin:50px 0;
+    left: -100% ;
 
 }
 
@@ -2293,5 +2431,20 @@ padding: 2rem;
 .contact-info i{
   color: #fff;
 }
+
+.dropdown-content {
+  /* Estilos adicionales */
+  max-height: none;
+  overflow-y: auto;
+  padding: 0;
+  width: 900px;
+  transform: translateX(-50%);
+  
+  
+}
+.dropdown-content a {
+  margin: 10px;
+}
+
 
 }

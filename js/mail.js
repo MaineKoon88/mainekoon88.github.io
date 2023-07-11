@@ -30,6 +30,11 @@ document.getElementById('btn').addEventListener('click', function(event) {
   
   var errorMessage = document.getElementById('errorMessage');
   if (isValid && email.match(emailRegex)) {
+    var btn = document.getElementById("btn");
+
+    // Reemplaza el texto del botón por la animación mientras se envía el mensaje
+    btn.innerHTML = '<span><i class="fa-solid fa-circle-notch fa-spin"></i></span>';
+
     var body = 'Nombre: ' + name + '<br/> email: ' + email + '<br/> Asunto: ' + subject + '<br/> Mensaje: ' + message;
 
     Email.send({
@@ -39,9 +44,14 @@ document.getElementById('btn').addEventListener('click', function(event) {
       Subject: "Mensaje de contacto",
       Body: body
     }).then(function(message) {
-      var btn = document.getElementById("btn");
-      btn.innerHTML = "Mensaje Enviado!";
+      // ... Código para manejar el envío del mensaje ...
+
+      // Reemplaza el texto del botón por el mensaje "Mensaje Enviado!"
+      btn.innerHTML = 'Mensaje Enviado!';
+
       resetForm();
+
+      // Vuelve a establecer el texto original del botón después de 3 segundos
       setTimeout(function() {
         btn.innerHTML = '<span>Enviar <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i></span>';
       }, 3000);
@@ -49,14 +59,16 @@ document.getElementById('btn').addEventListener('click', function(event) {
   } else {
     errorMessage.textContent = 'Complete el formulario';
     
-    
     var container = document.getElementsByClassName('container-contact100-form-btn')[0];
     container.appendChild(errorMessage);
 
+    // Mostrar el mensaje de error
+    errorMessage.style.display = 'block';
+
+    // Ocultar el mensaje de error después de 5 segundos
     setTimeout(function() {
       errorMessage.style.display = 'none';
-    }, 3000);
-  
+    }, 5000);
   }
 });
 

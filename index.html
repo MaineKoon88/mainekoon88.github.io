@@ -79,6 +79,20 @@
     <nav class="navbar">
         <a href="#home" class="nav-item">Inicio</a>
         <a href="#servicios" class="nav-item">Servicios</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+              <span><ion-icon name="add-outline"></ion-icon></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="construct/neuro.html">Neurología</a>
+              <a href="construct/psyc.html">Psiquiatría</a>
+              <a href="construct/psico.html">Psicología</a>
+              <a href="construct/estudios.html">Estudios</a>
+              <a href="construct/estudios.html">Laboratorio</a>
+              <a href="construct/estudios.html">Ozonoterapia</a>
+              <a href="construct/estudios.html">Centro de Dia</a>
+            </div>
+          </div>
         <a href="#nosotros" class="nav-item">Quienes Somos</a>
         <a href="#team" class="nav-item">Staff</a>
         <a href="#contact" class="nav-item">Contacto</a>
@@ -87,6 +101,27 @@
       
 
 <div id="menu-btn" class="fas fa-bars"></div>
+
+<script>
+ $(document).ready(function() {
+  $('.dropbtn, .dropbtn ion-icon').on('click', function(e) {
+    e.preventDefault();
+    $('.dropdown-content').toggleClass('show');
+  });
+
+  $(document).on('click', function(e) {
+    if (
+      !$('.dropbtn').is(e.target) &&
+      !$('.dropbtn ion-icon').is(e.target) &&
+      !$('.dropdown-content').is(e.target) &&
+      $('.dropdown-content').has(e.target).length === 0
+    ) {
+      $('.dropdown-content').removeClass('show');
+    }
+  });
+});
+</script>
+
 </header>
 
 
@@ -322,9 +357,9 @@
 
 <!--Inicio about-->
 
-<section class="about" id="nosotros" >
+<section class="about"  >
 
-    <h1 class="heading"> Nuestra<span> Misión</span> </h1>
+    <h1 class="heading" id="nosotros"> Nuestra<span> Misión</span> </h1>
     
     <div class="row">
         <div class="content">
@@ -863,8 +898,9 @@
                       <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
                     </span>
                   </button>
-                  <p id="errorMessage" class="error-message"></p>
+                  
                 </div>
+                <p id="errorMessage" class="error-message"></p>
               </form>
               
         </div>
@@ -972,7 +1008,7 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+<script src="js/scrolldrop.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 
 <script src="js/scripts.js"></script>
@@ -1008,6 +1044,16 @@
   </script>
 
 <!--Fin Modal CV-->
+<script>
+    // Asegúrate de que este código se ejecute después de que se haya cargado el DOM
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtén el formulario
+  var form = document.getElementsByClassName('contact100-form')[0];
+  
+  // Restablece el formulario
+  form.reset();
+});
 
+</script>
 </body>
 </html>
