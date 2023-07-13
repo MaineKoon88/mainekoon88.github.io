@@ -1,15 +1,15 @@
 document.getElementById('btn').addEventListener('click', function(event) {
   event.preventDefault(); // Evitar el envío del formulario por defecto
-  
+
   var name = document.getElementById('Nombre').value;
   var email = document.getElementById('email').value;
   var subject = document.getElementById('Asunto').value;
   var message = document.getElementById('Mensaje').value;
-  
+
   var inputs = document.getElementsByClassName('input100');
   var isValid = true;
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
+
   Array.prototype.forEach.call(inputs, function(input) {
     if (input.name === 'email') {
       if (input.value.match(emailRegex)) {
@@ -27,7 +27,7 @@ document.getElementById('btn').addEventListener('click', function(event) {
       }
     }
   });
-  
+
   var errorMessage = document.getElementById('errorMessage');
   if (isValid && email.match(emailRegex)) {
     var btn = document.getElementById("btn");
@@ -57,18 +57,20 @@ document.getElementById('btn').addEventListener('click', function(event) {
       }, 3000);
     });
   } else {
-    errorMessage.textContent = 'Complete el formulario';
-    
-    var container = document.getElementsByClassName('container-contact100-form-btn')[0];
-    container.appendChild(errorMessage);
+    errorMessage.textContent = 'Complete el formulario!';
 
-    // Mostrar el mensaje de error
-    errorMessage.style.display = 'block';
+    var btn = document.getElementById("btn");
 
-    // Ocultar el mensaje de error después de 5 segundos
+    // Guardar el contenido original del botón
+    var originalContent = btn.innerHTML;
+
+    // Mostrar el mensaje de error dentro del botón
+    btn.innerHTML = '<span>' + errorMessage.textContent + '</span>';
+
+    // Ocultar el mensaje de error después de 3 segundos
     setTimeout(function() {
-      errorMessage.style.display = 'none';
-    }, 5000);
+      btn.innerHTML = originalContent; // Restablecer el contenido original del botón
+    }, 3000);
   }
 });
 

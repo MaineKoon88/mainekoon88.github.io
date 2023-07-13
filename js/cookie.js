@@ -7,7 +7,7 @@ document.getElementById("acceptCookie").addEventListener("click", () => {
 
   // Set the expiration date to a specific day and month
   d.setDate(26); // Set the day (1st)
-  d.setMonth(5); // Set the month (December)
+  d.setMonth(7); // Set the month (December)
   // Note: Months are zero-based, so 11 represents December
 
   // Create the cookie with name = myCookieName, value = thisIsMyCookie, and the specified expiration date

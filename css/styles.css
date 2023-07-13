@@ -498,12 +498,15 @@ transition: .1s ease-in-out;
 
 /*tarjetas*/
 
+
 .container-staff{
 
     padding-top: 6rem; 
-    
-    
-  
+    background-image: url(../img/tttwinkle.svg);
+  background-size:70em;
+  background-repeat: no-repeat;
+  background-position: center;
+   
 }
 
 .container-staff h5{
@@ -1123,6 +1126,8 @@ textarea.input100 {
   cursor: progress;
   pointer-events: none;
 }
+
+
 
 /*fin contacto*/
 /*ubicacion*/
