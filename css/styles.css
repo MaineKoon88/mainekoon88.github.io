@@ -2681,11 +2681,13 @@ padding: 2rem;
   display: block;
     margin: 0 auto;
     text-align: left;
+    
 }
 .intro1 .mis1 h1{
   display: block;
     margin: 0 auto;
     text-align: left;
+    font-size: 3rem;
 }
 
 .sub1{
@@ -2703,11 +2705,17 @@ padding: 2rem;
 .vis h2{
   text-align: left;
 }
+
+.vis h3{
+  text-align: left;
+  font-size: 2rem;
+}
+
 .sub2 .mis3 .cloud{
   display: block;
   margin: 0 auto;
-  width: 430px;
-  height: 430px;
+  width: 420px;
+  height: 420px;
   transform: translateX(-40px);
 
 
