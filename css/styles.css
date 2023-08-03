@@ -1,12 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 
 :root{
     --green:  #2ecc71 ;
     --blue:  #2471a3 ;
-    --black:  #17202a ;
-    --grey:  #424a54 ;
+    --black:#17202a ;
+    --grey:#999696  ;
+    --lightgrey: #fafafa;
     
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.5rem .5rem 0 rgba(0, 0, 0, .2);
@@ -226,7 +226,7 @@ padding-bottom: 10rem;
 
 .home .content p{
     font-size: 2rem ;
-    color: var(--grey);
+    color: var(--black);
     line-height: 1.8;
     padding: 1rem 0;
     text-align: justify;
@@ -294,6 +294,7 @@ color: var(--green);
 .services{
 
   padding-top: 7rem;
+  background-color: var(--lightgrey);
 
 }
 
@@ -408,19 +409,31 @@ transition: .1s ease-in-out;
 
 .about .row .content {
   flex: 1 1 45rem;
+  
 }
 
 .about .row .content h3 {
   color: var(--black);
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1.8;
+  text-transform: uppercase;
+  text-align: justify;
+  
+}
+
+.about .row .content h3 span{
+  color: var(--green);
+  text-transform: uppercase;
+  text-align: justify;
 }
 
 .about .row .content p {
-  color: var(--grey);
+  color: var(--black);
   padding: 1rem 0;
   font-size: 1.5rem;
   line-height: 1.8;
+  text-transform: none;
+  text-align: justify;
 }
 
 
@@ -498,6 +511,9 @@ transition: .1s ease-in-out;
 
 /*tarjetas*/
 
+.staff{
+  background-color: var(--lightgrey);
+}
 
 .container-staff{
 
@@ -516,6 +532,7 @@ transition: .1s ease-in-out;
 .staff .heading{
   padding-top: 12rem;
   font-size: 5rem;
+  
 }
 
 
@@ -1485,7 +1502,146 @@ hr{
 }
 
 /*fin cookie*/
+/*---------------------Seccion Mision----------------------------------*/
+.intro1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  }
 
+.intro1 .mis1{
+  flex:1 1 45rem ;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  
+}
+
+.intro1 .mis1 h1{
+  font-size: 5rem ;
+  color: var(--black);
+  line-height: 1.8;
+  text-transform: none;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+.intro1 .mis1 p{
+  font-size: 2rem ;
+  color: var(--black);
+  line-height: 1.8;
+  text-transform: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  margin-left: 300px;
+  margin-right: 300px;
+  }
+
+
+.sub1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
+  padding-bottom: 3rem;
+  background-color: var(--green);
+}
+
+.sub1 .mis2{
+  flex:1 1 45rem ;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  
+}
+
+.sub1 .mis2 h2{
+  font-size: 3rem ;
+  color: var(--black);
+  line-height: 1.8;
+  text-transform: none;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+
+.sub1 .mis2 h3{
+  font-size: 2rem ;
+  color: var(--black);
+  line-height: 1.8;
+  text-transform: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  margin-left: 300px;
+  margin-right: 300px;
+  
+  }
+
+  .sub2{
+    display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  }
+
+
+  .sub2 .mis3 .cloud{
+    width: 600px;
+    height: 600px;
+  }
+
+  /* Estilo para el contenedor principal */
+.sub2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+/* Estilo para el contenedor interno que envuelve la imagen y el texto */
+
+
+/* Estilo para la imagen */
+.mis3 {
+  flex: 0 0 auto; /* Evitar que la imagen se estire */
+  margin-right: 20px; /* Agregar un margen entre la imagen y el texto */
+}
+
+/* Estilo para el texto */
+.vis {
+  flex: 1;
+  }
+  .vis h2{
+    font-size: 5rem;
+  }
+
+  .vis h3{
+    font-size: 3rem;
+    line-height: 50px;
+    text-transform: none;
+    text-align: justify;
+    word-spacing: 2.5px;
+    padding-top: 3rem;
+    color:#756e6e;
+
+  }
+
+
+
+
+
+/*---------------------Fin Seccion Mision----------------------------------*/
 /*---------------------Seccion Neuro----------------------------------*/
 
 /*parallax*/
@@ -1969,6 +2125,29 @@ padding: 2rem;
         translate: -60px;
       }
 
+      .intro1{
+        display: block;
+          margin: 0 auto;
+      }
+      
+      .intro1 .mis1 p{
+        display: block;
+          margin: 0 auto;
+          text-align: center;
+      }
+      
+      .sub1{
+        display: block;
+          margin: 0 auto;
+      }
+      
+      .sub1 .mis2 h3{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      
+      }
+
 
       }
 
@@ -2158,6 +2337,41 @@ padding: 2rem;
   margin: 0 auto;
   translate: -60px;
 }
+
+.intro1{
+  display: block;
+    margin: 0 auto;
+}
+
+.intro1 .mis1 p{
+  display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub1{
+  display: block;
+    margin: 0 auto;
+}
+
+.sub1 .mis2 h3{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.sub2 .mis3 .cloud{
+  display: block;
+  margin: 0 auto;
+  width: 430px;
+  height: 430px;
+  transform: translateX(40px);
+  
+
+
+}
+
 }
 
 
@@ -2457,4 +2671,45 @@ padding: 2rem;
 }
 
 
+.intro1{
+  display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.intro1 .mis1 p{
+  display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+.intro1 .mis1 h1{
+  display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.sub1{
+  display: block;
+    margin: 0 auto;
+}
+
+.sub1 .mis2 h3{
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.vis h2{
+  text-align: left;
+}
+.sub2 .mis3 .cloud{
+  display: block;
+  margin: 0 auto;
+  width: 430px;
+  height: 430px;
+  transform: translateX(-40px);
+
+
+}
 }
