@@ -28,6 +28,7 @@
     text-transform: capitalize;
     transition: all .2s ease-out;
     text-decoration: none;
+    
 
 }
 
@@ -2685,6 +2686,7 @@ padding: 2rem;
   display: block;
     margin: 0 auto;
     text-align: left;
+    overflow-x: hidden;
 }
 
 .intro1 .mis1 p{
@@ -2703,6 +2705,8 @@ padding: 2rem;
 .sub1{
   display: block;
     margin: 0 auto;
+    overflow-x: hidden;
+    
 }
 
 .sub1 .mis2 h3{
@@ -2721,11 +2725,18 @@ padding: 2rem;
   font-size: 2rem;
 }
 
+.sub2{
+  display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
 .sub2 .mis3 .cloud{
   display: block;
   margin: 0 auto;
   width: 300px;
   height: 300px;
+  transform: translateX(10px);
   
 
 
