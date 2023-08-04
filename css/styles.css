@@ -2501,7 +2501,15 @@ padding: 2rem;
       font-size: large;
       
     }
-
+  
+    .about .row .content h3{
+      text-align: left;
+      font-size: 3rem;
+    }
+    .about .row .content p{
+      text-align: left;
+      font-size: 2rem;
+    }
      
 
 
@@ -2714,8 +2722,8 @@ padding: 2rem;
 .sub2 .mis3 .cloud{
   display: block;
   margin: 0 auto;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   transform: translateX(-40px);
 
 
