@@ -2667,10 +2667,12 @@ padding: 2rem;
   /* Estilos adicionales */
   max-height: none;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0;
   width: 900px;
   transform: translateX(-48%);
   left: -800%;
+  
   
 }
 .dropdown-content a {
@@ -2722,8 +2724,8 @@ padding: 2rem;
 .sub2 .mis3 .cloud{
   display: block;
   margin: 0 auto;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   
 
 
