@@ -1927,10 +1927,7 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 /*---------------------Hospital de dia-----------------------------*/
 .parallax3 {
   height: auto;
-  text-align: center;
-  display: grid;
-  place-items: center;
-  align-content: center;
+  
   padding-top: 2rem;
   min-height: 500px;
   background-image: url("../img/dia.jpg");
@@ -1939,6 +1936,7 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 #parallax3::before {
@@ -1954,7 +1952,9 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 
 .parallax3 .content {
   position: relative;
-  z-index: 2;
+  flex:1 1 45rem ;
+  text-align: center;
+  z-index: 3;
 }
 
 
@@ -1965,27 +1965,21 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
   text-transform: none;
   color: #fff;
   z-index: 2;
+  
   }
-  .parallax3 h2{
+  .parallax3 p{
+    
     padding-bottom: 15rem;
     padding-top: 2rem;
     font-size: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    
     text-transform: none;
     color: #fff;
     z-index: 2;
+    
   }
 
-.parallax3 li{
-  text-transform: none;
-  text-align: left;
-  margin-left: 35px;
-  color: #fff;
-  font-size: 24px;
-  z-index: 2;
 
-}
 .parallax3 span{
   color: var(--green);
   font-weight: bold;
@@ -1994,35 +1988,41 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 
 .program1{
 
+  display: flex;
+  justify-content: space-between; /* Coloca el botón en el borde derecho */
   background-color: #fff;
   width: 700px;
   margin-left: 10rem;
   background: rgba(255, 255, 255, 0.21);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 1;
-  padding-bottom: 5rem;
-  margin-bottom: 10rem;
-  padding-top: 5rem ;
-
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  position: relative;
 
 }
 .program1 h1{
   color: var(--green);
- 
   float: left;
   margin-left: 5px;
+  margin-right: 10px;
   transform: translateY(-4rem);
   border-right: 1px solid var(--green);
+  z-index: 2;
 
   
 }
 
+
 .program1 h3{
   font-size: 24px;
+  text-align: left;
+  text-transform: none;
   color: #fff;
   z-index: 2;
   
@@ -2034,51 +2034,58 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-left: 200px;
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(50%);
+  transform: translateX(30%);
   transition: all 2s;
   text-align: center;
 }
 
 .program2{
 
+  display: flex;
+  justify-content: space-between; /* Coloca el botón en el borde derecho */
   background-color: #fff;
   width: 700px;
   margin-left: 10rem;
   background: rgba(255, 255, 255, 0.21);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 1;
-  padding-bottom: 5rem;
-  margin-bottom: 10rem;
-  padding-top: 5rem ;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  position: relative;
 
 
 }
 .program2 h1{
   color: var(--green);
- 
   float: left;
   margin-left: 5px;
+  margin-right: 10px;
   transform: translateY(-4rem);
   border-right: 1px solid var(--green);
+  z-index: 2;
 
   
 }
 
 .program2 h3{
   font-size: 24px;
+  text-transform: none;
   color: #fff;
   z-index: 2;
+  text-align: left;
+  margin-left: 5px;
   
   
 }
 
 .program2 {
   flex: 1;
-  margin-left: 200px;
+  margin-left: 400px;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(30%);
@@ -2086,20 +2093,73 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
+/* Estilo para el botón */
+.program2 .info-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: stretch; /* Alinea el botón de arriba a abajo */
+  height: 100px; /* Establece la altura del botón al 100% */
+}
+.program1 .info-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: stretch; /* Alinea el botón de arriba a abajo */
+  height: 100px; /* Establece la altura del botón al 100% */
+}
+
+/* Estilo para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  text-align: left;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #000;
+  
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Agrega estilos adicionales al modal según sea necesario */
 
 
 
 @media(prefers-reduced-motion){
-  .hidden {
+  .program1 {
     transition: none;
   }
-  .vector{
+  .program2{
     transition: none;
   }
-  .hidden2 {
-    transition: none;
-  }
-
+ 
 }
 
 .show {
@@ -2427,7 +2487,24 @@ height: 80px;
  
 }
 
+.parallax3 h1 {
+  font-size: 6vw;
+}
 
+.parallax3 p {
+  font-size: 4vw;
+}
+
+.program1 {
+  max-width: 90%;
+  font-size: 3vw;
+  transform: translateX(-50px);
+}
+.program2 {
+  max-width: 90%;
+  font-size: 3vw;
+  transform: translateX(-250px);
+}
 
 }
 
@@ -2675,6 +2752,24 @@ padding: 2rem;
       font-size: 8px;
     }
     
+    .parallax3 h1 {
+      font-size: 6vw;
+    }
+    
+    .parallax3 p {
+      font-size: 4vw;
+    }
+    
+    .program1 {
+      max-width: 90%;
+      font-size: 3vw;
+      transform: translateX(-180px);
+    }
+    .program2 {
+      max-width: 90%;
+      font-size: 3vw;
+      transform: translateX(-380px);
+    }
     
    
 
@@ -2937,11 +3032,25 @@ font-size: 8px;
   width: 430px;
   height: 430px;
   transform: translateX(40px);
+  }
+  .parallax3 h1 {
+    font-size: 6vw;
+  }
   
-
-
-}
-
+  .parallax3 p {
+    font-size: 4vw;
+  }
+  
+  .program1 {
+    max-width: 90%;
+    font-size: 3vw;
+    transform: translateX(-180px);
+  }
+  .program2 {
+    max-width: 90%;
+    font-size: 3vw;
+    transform: translateX(-380px);
+  }
 }
 
 
@@ -3217,6 +3326,25 @@ footer{
 .parallax .container5c .animation{
   display: none;
 
+}
+
+.parallax3 h1 {
+  font-size: 6vw;
+}
+
+.parallax3 p {
+  font-size: 4vw;
+}
+
+.program1 {
+  max-width: 90%;
+  font-size: 3vw;
+  transform: translateX(-180px);
+}
+.program2 {
+  max-width: 90%;
+  font-size: 3vw;
+  transform: translateX(-380px);
 }
 
 .wave{
