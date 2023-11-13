@@ -538,6 +538,31 @@ transition: .1s ease-in-out;
 
 /*cards*/
 
+.cards3 {
+  
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin: 0 10px; /* Espacio entre las tarjetas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(10px);
+  
+  
+}
+
+
+
+.cards3 p{
+ text-align: center;
+ text-transform: none;
+}
+
 
 /*tarjetas*/
 
@@ -3221,9 +3246,11 @@ padding: 2rem;
 }
     .container-cv .name {
       border-left: none;
+      transform: translateX(-15px);
      }
      .container-cv .name .surname{
       translate: -10%;
+      
      }
     .project  {
       border-left: none;
@@ -3249,6 +3276,7 @@ padding: 2rem;
     .container-cv .name .specialize{
       text-align: center;
       translate: -5%;
+      
     }
 
     .experience{
@@ -3355,8 +3383,14 @@ footer{
   margin: 0 auto;
   margin-top: 120px;
   
-  
+}
 
+
+.cards3{
+  display: block;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-right: 25px;
 }
 
 .modalck{
