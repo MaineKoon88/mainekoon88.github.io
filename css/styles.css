@@ -95,7 +95,7 @@ display: none;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
   width: 20rem;
-  height: 46rem;
+  height: 52rem;
   background: #fff;
   border: var(--border);
   text-align: center;
@@ -478,11 +478,12 @@ transition: .1s ease-in-out;
   border-radius: 8px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
   padding: 16px;
-  margin:  56px 24px;
+  margin: 0 10px; /* Espacio entre las tarjetas */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .cards-image {
@@ -515,6 +516,7 @@ transition: .1s ease-in-out;
 
 .cards p{
  text-align: center;
+ text-transform: none;
 }
 
 .prof{
@@ -544,8 +546,12 @@ transition: .1s ease-in-out;
 }
 
 .container-staff{
-
-    padding-top: 8rem; 
+  display: flex;
+  justify-content: center;
+    padding-top: 12rem; 
+    padding-bottom: 5rem;
+    gap: 10px;
+    flex-grow: 1;
     
    
 }
@@ -1925,6 +1931,42 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 
 /*---------------------Fin seccion Ozono---------------------------*/
 /*---------------------Hospital de dia-----------------------------*/
+.infodia{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  background: rgb(46,204,113);
+background: linear-gradient(90deg, rgba(46,204,113,1) 0%, rgba(36,113,163,1) 28%, rgba(255,255,255,1) 58%);
+  }
+  
+  .units{
+    width: 600px;
+    border-radius: 100px;
+  }
+  
+  .infodia .content{
+      flex:1 1 45rem ;
+      padding-top: 12rem;
+      
+      
+  }
+  
+  
+  
+  .infodia .content p{
+      font-size: 3rem ;
+      color: #000000;
+      line-height: 1.8;
+      padding: 1rem 0;
+      text-align: left;
+      text-transform:initial;
+     
+  }
+
+
 .parallax3 {
   height: auto;
   
@@ -2103,6 +2145,7 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
   cursor: pointer;
   align-self: stretch; /* Alinea el botón de arriba a abajo */
   height: 100px; /* Establece la altura del botón al 100% */
+  transition: 0.3s ease-in-out;
 }
 .program1 .info-button {
   background-color: #007bff;
@@ -2113,6 +2156,15 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
   cursor: pointer;
   align-self: stretch; /* Alinea el botón de arriba a abajo */
   height: 100px; /* Establece la altura del botón al 100% */
+  transition: 0.3s ease-in-out;
+}
+.program1 .info-button:hover{
+  background-color: var(--green);
+  transition: 0.3s ease-in-out;
+}
+.program2 .info-button:hover{
+  background-color: var(--green);
+  transition: 0.3s ease-in-out;
 }
 
 /* Estilo para el modal */
@@ -2132,14 +2184,16 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 .modal-content {
   background-color: #fff;
   text-align: left;
-  font-size: 20px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: #000;
   
 }
-
+.modal-content h2{
+  font-size: 40px;
+  text-transform: none;
+}
 .close-button {
   position: absolute;
   top: 10px;
@@ -2148,6 +2202,17 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
   cursor: pointer;
 }
 
+.banner{
+  
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.banner p{
+  text-align: center;
+  font-size: 25px;
+  text-transform: none;
+}
 /* Agrega estilos adicionales al modal según sea necesario */
 
 
@@ -3225,6 +3290,7 @@ padding: 2rem;
     padding-right: 2rem;
     display: block;
     margin: 0 auto;
+    gap: 10px;
   }
   
 
@@ -3285,7 +3351,12 @@ footer{
 }
 
  .cards{
-  margin-left: 45px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 120px;
+  
+  
+
 }
 
 .modalck{
