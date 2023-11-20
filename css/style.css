@@ -147,3 +147,14 @@
     left: 10px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+    right: 10px;
+    left: 10px;
+  }
+}

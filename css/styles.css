@@ -119,6 +119,12 @@ display: none;
   color: var(--blue);
 }
 
+.dropbtn:hover{
+  -webkit-transform:rotate(180deg);
+  transition: 0.5s ease-in-out ;
+
+}
+
 .dropdown:hover .dropdown-content,
 .dropdown .dropbtn:focus + .dropdown-content {
   display: block;
@@ -732,6 +738,7 @@ list-style: none;
   float: left;
   font-size: 20px;
   letter-spacing: 4px;
+
 }
 .project .item{
   font-size: 14px;
@@ -1918,41 +1925,93 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 
 
 /*----------------------Seccion Ozono-------------------------------*/
-.parallax2 {
-  height: auto;
-  text-align: center;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  color: var(--black);
-  font-size: 24px;
-  overflow: hidden;
-  padding-top: 2rem;
-  min-height: 500px;
-  background-image: url("../img/ozonowall2.jpg");
+#ozono1 {
+  background-image: url(../img/ozonowall2.jpg); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 800px;
+  position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
+#ozono1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha (0.5 en este caso) para cambiar la opacidad */
+  z-index: -1;
+}
 
 
 .parallax2 h1{
   font-size: 70px;
+  color: #fff;
   padding-bottom: 15rem;
   padding-top: 3rem;
   text-transform: none;
+  z-index: 2;
 
 }
 
 .parallax2 p{
   text-transform: none;
+  font-size: 25px;
+  color: #fff;
+  margin-left: 10px;
+  z-index: 2;
 }
 .parallax2 span{
   color: var(--green);
   font-weight: bold;
+  z-index: 2;
 }
+
+
+.o2{
+
+  display: flex;
+  justify-content: space-between; /* Coloca el botón en el borde derecho */
+  background-color: #fff;
+  width: 700px;
+  max-height: 200px;
+  margin-left: 10rem;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  margin-top: 5rem;
+  position: relative;
+
+}
+.o2 h1{
+  display: block;
+  margin: 0 auto;
+  color: var(--green);
+  font-size: 10rem;
+  z-index: 2;
+}
+
+
+
+
+.o2 {
+  flex: 1;
+  margin-left: 45rem;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 2s;
+  text-align: center;
+}
+
 
 /*---------------------Fin seccion Ozono---------------------------*/
 /*---------------------Hospital de dia-----------------------------*/
@@ -2260,6 +2319,100 @@ background: linear-gradient(90deg, rgba(46,204,113,1) 0%, rgba(36,113,163,1) 28%
 
 /*---------------------fin Hospital de dia-------------------------*/
 
+/*---------------------Inicio Psiquiatria--------------------------*/
+#psyc1 {
+  background-image: url(../img/psycwall.jpg); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 800px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#psyc1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha (0.5 en este caso) para cambiar la opacidad */
+  z-index: -1;
+}
+
+#psyc1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  }
+  
+
+  .parallax4 h1{
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+    text-transform: none;
+    z-index: 2;
+  
+  }
+  
+  .parallax4 p{
+    text-transform: none;
+    font-size: 25px;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .parallax4 span{
+    color: var(--green);
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  
+
+.parallax4 .content{
+  flex:1 1 45rem ;
+  padding-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+
+  
+}
+
+.parallax4 .content h3{
+  font-size: 5rem ;
+  color: #fff;
+  line-height: 1.8;
+  text-transform: uppercase;
+ 
+}
+
+.parallax4 .content span{
+
+text-transform: uppercase;
+color: var(--green);
+
+}
+
+.parallax4 .content p{
+  font-size: 2rem ;
+  color: #fff;
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-align: left;
+  text-transform:initial;
+ 
+}
+
+/*-------------------------Fin Psiquiatria--------------------------------*/
+
 
 
 
@@ -2471,9 +2624,12 @@ height: 80px;
 
 
   .cards{
-    margin-left: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 5rem;
+    
   }
-
   .parallax{
     display: block;
     text-align: center;
@@ -2734,7 +2890,11 @@ padding: 2rem;
 
     
       .cards{
-        margin-left: 45px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 5rem;
+        
       }
 
       .parallax{
@@ -2801,8 +2961,8 @@ padding: 2rem;
         padding-right: 2rem;
         display: block;
         margin: 0 auto;
+        gap: 10px;
       }
-      
     
       .contact100-form {
         padding: 40px 15px 50px
@@ -2865,6 +3025,10 @@ padding: 2rem;
 
 
       }
+
+
+
+     
 
 
 
@@ -2965,9 +3129,13 @@ padding: 2rem;
 }
 
 .container-staff{
- 
-  padding-left: 0;
-
+  padding-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: inherit;
+  margin: 0 auto;
+  gap: 10px;
+  
 }
 
 .container-cv{
@@ -3052,7 +3220,11 @@ font-size: 8px;
 }
 
 .cards{
-  margin-left: 45px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 5rem;
+  
 }
 
 .parallax{
@@ -3141,6 +3313,11 @@ font-size: 8px;
     font-size: 3vw;
     transform: translateX(-380px);
   }
+
+
+  
+
+
 }
 
 
@@ -3263,6 +3440,7 @@ padding: 2rem;
     .project h2{
       text-align: center;
       text-decoration: underline;
+      transform: translateX(-15px);
     }
     .project .des {
       border-left: none;
@@ -3386,12 +3564,7 @@ footer{
 }
 
 
-.cards3{
-  display: block;
-  margin: 0 auto;
-  margin-top: 120px;
-  margin-right: 25px;
-}
+
 
 .modalck{
   margin-top: 100px;
@@ -3550,4 +3723,15 @@ footer{
 
 
 }
+
+.infodia{
+  background: linear-gradient(180deg, rgba(46,204,113,1) 0%, rgba(36,113,163,1) 28%, rgba(255,255,255,1) 58%);
+}
+
+.units{
+  width: 380px;
+  padding-right: 15px;
+  
+}
+
 }
