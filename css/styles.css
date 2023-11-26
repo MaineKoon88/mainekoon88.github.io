@@ -43,14 +43,84 @@ html{
 section{
     padding: 2rem 9%;
 }
-.header .navbar a.active {
-  color: #2ecc71; /* Color de texto para el elemento activo */
+
+
+/*---------------popup bienvenida--------------------*/
+
+#popup {
+  
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(18, 18, 18, 0.6); /* Fondo blanco con transparencia para el efecto Glassmorphism */
+  backdrop-filter: blur(10px); /* Agrega un desenfoque para mejorar el efecto */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; /* Color del texto en el popup */
+  z-index: 1001;
+}
+
+.popup-content {
+  /* Estilos para el contenido dentro del popup */
+  text-align: center;
+  
+ 
+}
+
+.popup-content h1{
+  color: var(--green);
+  font-size: 7rem;
+  transform: translateY(-8rem);
+}
+
+.popup-content p{
+  font-size: 2rem;
+  transform: translateY(-7rem);
+  text-transform: none;
+  text-align: center;
+  
+}
+
+#popup img {
+  
+  max-width: 500px; 
+  
+}
+
+.popup-content button {
+  /* Estilos para el botón de cerrar */
+  background-color: #fff; /* Color de fondo del botón */
+  font-size: 2rem;
+  color: #000; /* Color del texto en el botón */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(5px); /* Aplica un desenfoque al botón para mejorar el efecto */
+  transition: 0.1s ease-in-out;
+}
+
+.popup-content button:hover{
+  background-color: var(--green);
+  color: #fff;
+  transition: 0.1s ease-in-out;
 }
 
 
 
 
+/*--------------- fin popup bienvenida--------------------*/
+
+
+
+
 /*header*/
+
+.header .navbar a.active {
+  color: #2ecc71; /* Color de texto para el elemento activo */
+}
 
 .header{
     display: flex;
@@ -3731,6 +3801,14 @@ footer{
 .units{
   width: 380px;
   padding-right: 15px;
+  
+}
+
+.popup-content p{
+  font-size: 1.5rem;
+  transform: translateY(-7rem);
+  text-transform: none;
+  margin: 20px;
   
 }
 

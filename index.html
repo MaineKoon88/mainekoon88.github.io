@@ -24,6 +24,17 @@
 
 </head>
 <body>
+
+    
+    <div id="popup">
+        <div class="popup-content">
+            <img src="img/popup2.png" alt="Logo">
+            <h1>INAS</h1>
+            <p>Bienvenidos al Instituto Neuropsiquiátrico Argentino del Sur.</p>
+            <p>¡Gracias por visitarnos!</p>
+            <button onclick="cerrarPopup()">Cerrar</button>
+        </div>
+    </div>
     <!--Cookies-->
     <div id="cookiePopup" class="hide">
         <img src="img/cookie.png" />
@@ -39,7 +50,7 @@
         <div class="modal-contentck">
           <span class="close">&times;</span>
           
-          <!-- Aquí puedes agregar el contenido de la ventana modal -->
+          <!--contenido de la ventana modal -->
           <h1>POLÍTICA DE COOKIES</h1>
           <br>
           <img src="img/terms.svg" alt="">
@@ -84,7 +95,7 @@
               <span><ion-icon name="chevron-down-outline"></ion-icon></span>
             </button>
             <div class="dropdown-content">
-              <a href="./construct/neuro.html">Neurología</a>
+              <a href="neuro.html">Neurología</a>
               <a href="./construct/psyc.html">Psiquiatría</a>
               <a href="./construct/psico.html">Psicología</a>
               <a href="./construct/estudios.html">Estudios</a>
@@ -152,7 +163,7 @@
                         <h2 class="serv">Neurología</h2>
                         <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
-                        <a href="construct/neuro.html" class="btn">+Info <span class="fas fa-chevron-right"></span></a>
+                        <a href="neuro.html" class="btn">+Info <span class="fas fa-chevron-right"></span></a>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -1341,7 +1352,8 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/scrolldrop.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
-
+<script src="js/popup.js"></script>
+<script src="js/active.js"></script>
 <script src="js/scripts.js"></script>
 <!--Whatsapp-->
 <a href="https://wa.me/5491166678870/?text=Hola!%20Quiero%20mas%20información" target="_blank" class="fab">

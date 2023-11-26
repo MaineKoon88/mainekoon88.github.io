@@ -15,5 +15,11 @@ infoButtons.forEach(function(button) {
     closeButton.addEventListener("click", function() {
       modal.style.display = "none"; // Cerrar el modal
     });
+
+    // Agregar evento de clic al fondo del modal para cerrarlo
+    var modalBackground = modal.querySelector(".modal-background");
+    modalBackground.addEventListener("click", function() {
+      modal.style.display = "none"; // Cerrar el modal
+    });
   });
 });
