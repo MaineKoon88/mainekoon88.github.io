@@ -53,6 +53,8 @@ section{
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   background: rgba(18, 18, 18, 0.6); /* Fondo blanco con transparencia para el efecto Glassmorphism */
   backdrop-filter: blur(10px); /* Agrega un desenfoque para mejorar el efecto */
@@ -67,6 +69,14 @@ section{
   text-align: center;
   
  
+}
+
+.cerrar-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .popup-content h1{
@@ -549,7 +559,7 @@ transition: .1s ease-in-out;
 .cards {
   
   position: relative;
-  width: 300px;
+  width: 260px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
@@ -614,30 +624,9 @@ transition: .1s ease-in-out;
 
 /*cards*/
 
-.cards3 {
-  
-  position: relative;
-  width: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-  padding: 16px;
-  margin: 0 10px; /* Espacio entre las tarjetas */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(10px);
-  
-  
-}
 
 
 
-.cards3 p{
- text-align: center;
- text-transform: none;
-}
 
 
 /*tarjetas*/
@@ -653,6 +642,8 @@ transition: .1s ease-in-out;
     padding-bottom: 5rem;
     gap: 10px;
     flex-grow: 1;
+    
+    
     
    
 }
@@ -2563,7 +2554,10 @@ color: var(--green);
 
 
 /*media queries */
-@media (max-width:1270px) {
+
+
+
+@media (max-width:1300px) {
   html{
     font-size: 55%;
     overflow-x: hidden;
@@ -2573,7 +2567,7 @@ color: var(--green);
 
 
 .header .navbar{
-
+  
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -2598,11 +2592,11 @@ color: var(--green);
 
 .header .navbar a{
 
-  font-size: 4rem;
+  font-size: 3rem;
   display:block;
   margin:50px 0;
   left: -100% ;
-
+  
 }
 .dropdown-content {
 /* Estilos adicionales */
@@ -2677,10 +2671,7 @@ height: 80px;
   }
 
 
-  .container-cv{
-    display: none;
   
-  }
   
   .mobile{
     display: block;
@@ -2834,7 +2825,13 @@ height: 80px;
         scroll-padding-top: 7rem;
         scroll-behavior: smooth;
     }
+    .popup {
+      padding: 10px;
+  }
 
+  #popup img {
+    max-width: 300px;
+  }
 
     .header .navbar{
 
@@ -2943,10 +2940,6 @@ padding: 2rem;
       }
 
 
-      .container-cv{
-        display: none;
-      
-      }
       
       .mobile{
         display: block;
@@ -3119,8 +3112,13 @@ padding: 2rem;
     .footer-clean .item.social > a {
         margin-top:10px;
       }
-
-
+      .popup {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    #popup img {
+      max-width: 300px;
+    }
       .footer-clean .copyright {
         margin-top:14px;
         margin-bottom:0;
@@ -3208,10 +3206,7 @@ padding: 2rem;
   
 }
 
-.container-cv{
-  display: none;
 
-}
 
 .mobile{
   display: block;
@@ -3804,12 +3799,34 @@ footer{
   
 }
 
+
+/*
 .popup-content p{
   font-size: 1.5rem;
   transform: translateY(-7rem);
   text-transform: none;
   margin: 20px;
   
+}
+*/
+
+.popup {
+  padding: 5px;
+  font-size: 0.7rem;
+}
+.popup-content h1 {
+  font-size: 5rem;
+  transform: translateY(-6rem);
+}
+.popup-content p {
+  font-size: 1.5rem;
+  transform: translateY(-5rem);
+}
+#popup img {
+  max-width: 300px;
+}
+.popup-content button {
+  font-size: 1.5rem;
 }
 
 }
