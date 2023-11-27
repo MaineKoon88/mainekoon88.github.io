@@ -76,6 +76,7 @@ section{
   top: 10px;
   right: 10px;
   font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -200,8 +201,8 @@ display: none;
 }
 
 .dropbtn:hover{
-  -webkit-transform:rotate(180deg);
-  transition: 0.5s ease-in-out ;
+  transform:rotate(180deg);
+  
 
 }
 
@@ -592,7 +593,7 @@ transition: .1s ease-in-out;
 
 .names {
   padding-top: 10rem;
-  font-size: 20px;
+  font-size: 18px;
   color: #333;
   font-weight: bold;
   letter-spacing: 0.8px;
