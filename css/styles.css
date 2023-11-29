@@ -19,6 +19,10 @@
 
 }
 
+body{
+  overflow: hidden;
+}
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -58,8 +62,6 @@ section{
   transform: translate(-50%, -50%);
   background: rgba(18, 18, 18, 0.6); /* Fondo blanco con transparencia para el efecto Glassmorphism */
   backdrop-filter: blur(10px); /* Agrega un desenfoque para mejorar el efecto */
-  padding: 20px;
-  border-radius: 10px;
   color: #fff; /* Color del texto en el popup */
   z-index: 1001;
 }
@@ -84,6 +86,7 @@ section{
   color: var(--green);
   font-size: 7rem;
   transform: translateY(-8rem);
+  
 }
 
 .popup-content p{
@@ -492,6 +495,7 @@ transition: .1s ease-in-out;
   color: var(--grey);
   font-size: 1.5rem;
   line-height: 2;
+  
 }
 
 
