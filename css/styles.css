@@ -73,6 +73,15 @@ section{
  
 }
 
+
+
+
+
+
+
+
+
+
 .cerrar-popup {
   position: absolute;
   top: 10px;
@@ -147,23 +156,49 @@ section{
     justify-content:right;
     justify-content: space-between;
     background: #fff;
+    height: 120px;
+    
     
 }
+.logo-container {
+  position: relative;
+}
 
-.logo1 { 
-    display: flex;
-    float: left;
-    width: 371px; 
-    height: 80px; 
-    margin-right: 50px;
-    transform: translateX(-30px);
-    
+.logo1 {
+  display: flex;
+  width: 200px;
+  height: 160px;
+  margin-right: 50px;
+  transform: translateX(-30px);
+  position: absolute;
+  top: 50%; /* Ajusta según sea necesario para centrar verticalmente */
+  transform: translateY(-40%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 1px #17202a ;
+  transition: opacity 0.1s ease-in-out; /* Transición para cambiar la opacidad del logo */
 }
 
 .logo2{
 display: none;
 
 }
+
+.logo3{
+  display: none;
+  
+  }
+
+  
+  .logo3 {
+      width: 160px;
+      height: 120px;
+      margin-right: 50px;
+      transform: translateX(-30px);
+      transition: opacity 0.1s ease-in-out; /* Transición para cambiar la opacidad del logo */
+      transform: translateX(-30px) scale(0.9); /* Escala inicialmente al 80% */
+    }
+
 
 .dropdown {
   position: relative;
@@ -2656,7 +2691,7 @@ height: 80px;
     
     .fab{
 
-      position: sticky;
+      position: fixed;
       float: right;
       margin-bottom: 10px;
       
@@ -2925,7 +2960,7 @@ padding: 2rem;
         
         .fab{
 
-          position: sticky;
+          position: fixed;
           float: right;
           margin-bottom: 10px;
           
@@ -3090,7 +3125,10 @@ padding: 2rem;
     }
     
    
-
+    .logo3{
+      display: none;
+      
+      }
 
       }
 
@@ -3183,7 +3221,7 @@ padding: 2rem;
 
 .fab{
 
-  position: sticky;
+  position: fixed;
   float: right;
   margin-bottom: 10px;
   
@@ -3385,7 +3423,10 @@ font-size: 8px;
   }
 
 
-  
+  .logo3{
+    display: none;
+    
+    }
 
 
 }
@@ -3599,9 +3640,10 @@ footer{
 
 .fab{
 
-  position: sticky;
+  position: fixed;
   float: right;
   margin-bottom: 10px;
+  
   
 
 }
@@ -3833,5 +3875,9 @@ footer{
 .popup-content button {
   font-size: 1.5rem;
 }
+.logo3{
+  display: none;
+  
+  }
 
 }

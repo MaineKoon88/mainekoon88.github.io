@@ -31,27 +31,46 @@
     
     <!--inicio header-->
 
-<header class="header">
+    <header class="header">
 
-    <a href="index.html" >
-        <img src="img/brain4.png" alt="" class="logo2">
-        <img src="img/brain4logo.png" alt="logo INAS"   class="logo1" />
-    </a>
+        <a href="#home" class="logo-container" >
+            <img src="./img/INAS.png" alt="logo INAS"  class="logo1" />
+            <img src="./img/brain4.png" alt="logo INAS" class="logo2">
+            <img src="./img/INAS2.png" alt="logo pequeño" class="logo3">
+            </a>
+        
     
-
-<nav class="navbar">
-<a href="index.html">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#nosotros">Quienes Somos</a>
-<a href="#team">Staff</a>
-<a href="#contact">Contacto</a>
-<a href="#map">Direccion</a>
-
-
-</nav>
-
-<div id="menu-btn" class="fas fa-bars"></div>
-</header>
+        <nav class="navbar">
+            <a href="../index.html" class="nav-item">Inicio</a>
+            <a href="#servicios" class="nav-item">Servicios</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                  <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                </button>
+                <div class="dropdown-content">
+                  <a href="neuro.html">Neurología</a>
+                  <a href="./construct/psyc.html">Psiquiatría</a>
+                  <a href="./construct/psico.html">Psicología</a>
+                  <a href="./construct/estudios.html">Estudios</a>
+                  <a href="./construct/estudios.html">Laboratorio</a>
+                  <a href="./construct/estudios.html">Ozonoterapia</a>
+                  <a href="dia.html">Hospital de Dia</a>
+                  <a href="./construct/estudios.html">Kinesiología</a>
+                </div>
+              </div>
+            <a href="#nosotros" class="nav-item">Nuestra misión</a>
+            <a href="#team" class="nav-item">Staff</a>
+            <a href="#contact" class="nav-item">Contacto</a>
+            
+            <a href="#maps" class="nav-item"><ion-icon name="location-outline"></ion-icon></a>
+          </nav>
+          
+    
+    <div id="menu-btn" class="fas fa-bars"></div>
+    
+    
+    
+    </header>
 
 
 <!--fin header-->
@@ -248,6 +267,9 @@
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
+<script src="./js/nav.js"></script>
+<script src="./js/logo.js"></script>
+<script src="./js/script.js"></script>
 
 
 </html>

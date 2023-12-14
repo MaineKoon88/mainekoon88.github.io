@@ -29,7 +29,7 @@
     
     <div id="popup">
         <div class="popup-content">
-            <span class="cerrar-popup" onclick="cerrarPopup()">X</span>
+            <button class="cerrar-popup" onclick="cerrarPopup()">X</button>
             <img src="img/popup2.png" alt="Logo">
             <h1>INAS</h1>
             <p>Bienvenidos al Instituto Neuropsiquiátrico Argentino del Sur.</p>
@@ -83,10 +83,11 @@
 
 <header class="header">
 
-    <a href="#home" >
+    <a href="#home" class="logo-container" >
+        <img src="img/INAS.png" alt="logo INAS"  class="logo1" />
         <img src="img/brain4.png" alt="logo INAS" class="logo2">
-        <img src="img/brain4logob.png" alt="logo INAS"  class="logo1" />
-    </a>
+        <img src="img/INAS2.png" alt="logo pequeño" class="logo3">
+        </a>
     
 
     <nav class="navbar">
@@ -1215,7 +1216,7 @@
                 <div class="col-sm-4 col-md-3 item">
                     <h3>Servicios</h3>
                     <ul>
-                        <li><a href="#">Neurología</a></li>
+                        <li><a href="#neuro.html">Neurología</a></li>
                         <li><a href="#">Psiquiatría</a></li>
                         <li><a href="#">Psicología</a></li>
                         <li><a href="#">Estudios</a></li>
@@ -1224,10 +1225,10 @@
                 <div class="col-sm-4 col-md-3 item">
                     <h3>Quienes somos</h3>
                     <ul>
-                        <li><a href="#">Consultorio</a></li>
-                        <li><a href="#">Equipo</a></li>
-                        <li><a href="#">Mision</a></li>
-                        <li><a href="#">Direccion</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#team">Equipo</a></li>
+                        <li><a href="#nosotros">Mision</a></li>
+                        <li><a href="#maps">Direccion</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 item">
@@ -1275,6 +1276,7 @@
 <script src="js/popup.js"></script>
 <script src="js/active.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/logo.js"></script>
 <!--Whatsapp-->
 <a href="https://wa.me/5491166678870/?text=Hola!%20Quiero%20mas%20información" target="_blank" class="fab">
     <img src="img/wplogo3.png" width="70" height="70">
