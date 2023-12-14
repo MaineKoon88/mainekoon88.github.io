@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
             logo3.style.display = 'none';
         } else {
             header.style.background = '#fff';
-            logo1.style.display = 'block';
-            logo2.style.display = 'none';
+            logo1.style.display = 'none';
+            logo2.style.display = 'block';
             logo3.style.display = 'none';
         }
     }
