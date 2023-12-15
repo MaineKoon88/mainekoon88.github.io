@@ -177,7 +177,7 @@ section{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: solid 1px #17202a ;
-  
+  box-shadow: var(--box-shadow);
   
 }
 
@@ -190,7 +190,7 @@ display: none;
 
 .logo3{
   display: none;
-  
+  box-shadow: var(--box-shadow);
   }
   .logo-transition {
     opacity: 0;
@@ -3893,7 +3893,9 @@ footer{
 }
 .logo3{
   display: none;
-  
+  transform: translateX(1rem);
+  width: 100px;
+  height: 100px;
   }
 
 }

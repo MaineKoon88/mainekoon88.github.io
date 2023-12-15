@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector('.header');
     var logo1 = document.querySelector('.logo1');
-    var logo2 = document.querySelector('.logo2');
     var logo3 = document.querySelector('.logo3');
     var isLogo1Visible = true;
     var hasResized = false;
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
           header.style.background = '#fff';
           await animateCSS('.logo1', 'fadeOut');
           logo1.style.display = 'none';
-          logo2.style.display = 'none';
           logo3.style.display = 'block';
           await animateCSS('.logo3', 'fadeIn');
           isLogo1Visible = false;
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
           header.style.background = '#fff';
           await animateCSS('.logo3', 'fadeOut');
           logo1.style.display = 'block';
-          logo2.style.display = 'none';
           logo3.style.display = 'none';
           await animateCSS('.logo1', 'fadeIn');
           isLogo1Visible = true;
@@ -34,37 +31,32 @@ document.addEventListener("DOMContentLoaded", function () {
           hasResized = false;
           isLogo1Visible = true;
           logo1.style.display = 'block';
-          logo2.style.display = 'none';
           logo3.style.display = 'none';
         }
       } else if (window.innerWidth >= 450) {
         if (window.scrollY === 0 && !isLogo1Visible) {
           header.style.background = '#fff';
-          await animateCSS('.logo2', 'fadeOut');
+          await animateCSS('.logo3', 'fadeOut');
           logo1.style.display = 'block';
-          logo2.style.display = 'none';
           logo3.style.display = 'none';
           await animateCSS('.logo1', 'fadeIn');
           isLogo1Visible = true;
         }
         header.style.background = '#fff';
         logo1.style.display = 'none';
-        logo2.style.display = 'block';
-        logo3.style.display = 'none';
+        logo3.style.display = 'block';
       } else {
         header.style.background = '#fff';
         if (window.scrollY === 0 && !isLogo1Visible) {
           header.style.background = '#fff';
-          await animateCSS('.logo2', 'fadeOut');
+          await animateCSS('.logo3', 'fadeOut');
           logo1.style.display = 'block';
-          logo2.style.display = 'none';
           logo3.style.display = 'none';
           await animateCSS('.logo1', 'fadeIn');
           isLogo1Visible = true;
         }
         logo1.style.display = 'none';
-        logo2.style.display = 'block';
-        logo3.style.display = 'none';
+        logo3.style.display = 'block';
         // Indicar que hemos cambiado el tamaño de la pantalla
         hasResized = true;
       }
