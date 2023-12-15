@@ -18,47 +18,52 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     
     <!--inicio header-->
 
-<header class="header">
+    <header class="header">
 
-    <a href="index.html" >
-        <img src="img/brain4.png" alt="" class="logo2">
-        <img src="img/brain4logo.png" alt="logo INAS"   class="logo1" />
-    </a>
+        <a href="#home" class="logo-container" >
+            <img src="img/INASbk.png" alt="logo INAS"  class="logo1" />
+            <img src="img/brain4.png" alt="logo INAS" class="logo2">
+            <img src="img/INAS2.png" alt="logo pequeño" class="logo3">
+            </a>
+        
     
-
-    <nav class="navbar">
-        <a href="#home" class="nav-item">Inicio</a>
-        <a href="#servicios" class="nav-item">Servicios</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-              <span><ion-icon name="chevron-down-outline"></ion-icon></span>
-            </button>
-            <div class="dropdown-content">
-              <a href="./construct/neuro.html">Neurología</a>
-              <a href="./construct/psyc.html">Psiquiatría</a>
-              <a href="./construct/psico.html">Psicología</a>
-              <a href="./construct/estudios.html">Estudios</a>
-              <a href="./construct/estudios.html">Laboratorio</a>
-              <a href="./construct/estudios.html">Ozonoterapia</a>
-              <a href="dia.html">Centro de Dia</a>
-              <a href="./construct/estudios.html">Kinesiología</a>
-            </div>
-          </div>
-        <a href="#nosotros" class="nav-item">Nuestra misión</a>
-        <a href="#team" class="nav-item">Staff</a>
-        <a href="#contact" class="nav-item">Contacto</a>
-        <a href="#maps" class="nav-item">Ubicación</a>
-      </nav>
-
-<div id="menu-btn" class="fas fa-bars"></div>
-</header>
-
+        <nav class="navbar">
+            <a href="index.html" class="nav-item">Inicio</a>
+            <a href="#servicios" class="nav-item">Servicios</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                  <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                </button>
+                <div class="dropdown-content">
+                  <a href="neuro.html">Neurología</a>
+                  <a href="./construct/psyc.html">Psiquiatría</a>
+                  <a href="./construct/psico.html">Psicología</a>
+                  <a href="./construct/estudios.html">Estudios</a>
+                  <a href="./construct/estudios.html">Laboratorio</a>
+                  <a href="./construct/estudios.html">Ozonoterapia</a>
+                  <a href="dia.html">Hospital de Dia</a>
+                  <a href="./construct/estudios.html">Kinesiología</a>
+                </div>
+              </div>
+            <a href="#nosotros" class="nav-item">Nuestra misión</a>
+            <a href="#team" class="nav-item">Staff</a>
+            <a href="#contact" class="nav-item">Contacto</a>
+            
+            <a href="#maps" class="nav-item"><ion-icon name="location-outline"></ion-icon></a>
+          </nav>
+          
+    
+    <div id="menu-btn" class="fas fa-bars"></div>
+    
+    
+    
+    </header>
 
 <!--fin header-->
 
@@ -71,7 +76,7 @@
 
 
 
-<div class="content">
+<div class="content" style="padding-top: 20rem;">
     <h3> Hospital de<span> Día</span></h3>
     <p>En el Instituto de Neurociencias Argentino del Sur (INAS), ponemos a disposición una variedad de programas de atención para la rehabilitación ambulatoria. Estos programas están diseñados tanto para pacientes hospitalizados como para aquellos en proceso de recuperación en sus hogares. Atendemos a pacientes convalecientes de diversas afecciones médicas
         </p>
@@ -268,7 +273,10 @@
 
  
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/parallaxdia.js"></script>
 <script src="js/modaldia.js"></script>
 <script src="js/script.js"></script>
+<script src="js/logo.js"></script>
 </html>
