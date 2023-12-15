@@ -162,7 +162,7 @@ section{
 }
 .logo-container {
   position: relative;
-  transition: 1s ease-in-out;
+  
 }
 
 .logo1 {
@@ -177,10 +177,12 @@ section{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: solid 1px #17202a ;
-  transition: opacity 0.1s ease-in-out;
+  
   background-color: #fff;
-  transition: 1s ease-in-out;
+  
 }
+
+
 
 .logo2{
 display: none;
@@ -193,7 +195,7 @@ display: none;
   }
   .logo-transition {
     opacity: 0;
-    transition: opacity 0.5s ease; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
+    
   
   }
 
