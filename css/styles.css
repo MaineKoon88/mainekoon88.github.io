@@ -61,7 +61,7 @@ section{
   height: 100%;
   transform: translate(-50%, -50%);
   background: rgba(18, 18, 18, 0.6); /* Fondo blanco con transparencia para el efecto Glassmorphism */
-  backdrop-filter: blur(10px); /* Agrega un desenfoque para mejorar el efecto */
+  backdrop-filter: blur(20px); /* Agrega un desenfoque para mejorar el efecto */
   color: #fff; /* Color del texto en el popup */
   z-index: 1001;
 }
@@ -1345,6 +1345,10 @@ textarea.input100 {
   
 }
 
+.map .mapaviejo{
+  display: none;
+}
+
 #map{
   padding-top: 10rem;
 }
@@ -1861,24 +1865,6 @@ hr{
 /*---------------------Fin Seccion Mision----------------------------------*/
 /*---------------------Seccion Neuro----------------------------------*/
 
-/*parallax*/
-
-/*
-
-.parallax {
-  height: auto;
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(36,113,163,1) 50%, rgba(23,32,42,1) 100%); 
-  text-align: center;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  color: #fff;
-  font-size: 24px;
-  overflow: hidden;
-  padding-top: 2rem;
-}
-*/
 .parallax {
   height: auto;
   text-align: center;
@@ -2039,6 +2025,193 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 /*fin parallax*/
 
 /*---------------------Fin Seccion Neuro----------------------------------*/
+/*---------------------Seccion Labo----------------------------------*/
+
+#labo {
+  background-image: url(../img/labowall2.jpg); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 800px;
+  position: relative;
+  display: grid;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#labo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha (0.5 en este caso) para cambiar la opacidad */
+  z-index: -1;
+}
+
+
+.labo h1{
+  font-size: 7rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  text-transform: none;
+  z-index: 2;
+
+}
+
+.labo p{
+  text-transform: none;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  color: #fff;
+  z-index: 2;
+
+}
+.labo span{
+  color: var(--green);
+  font-weight: bold;
+  text-transform: none;
+  text-align: center;
+  z-index: 2;
+}
+
+.labo img{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  
+}
+
+
+.claro {
+  
+  background-color:  #d35400 ;
+}
+
+.contenido {
+  background: rgb(23,32,42);
+background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%, rgba(255,255,255,1) 100%); 
+  padding: 40px;
+  text-align: center;
+}
+
+.texto-animado {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  font-size: 25px;
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-transform: lowercase;
+  padding-bottom: 15rem;
+  
+  
+}
+
+.hidden2 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-transform: lowercase;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  
+}
+
+.aneu1{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: center;
+  
+}
+
+.aneu2{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: center;
+  
+}
+
+
+
+.container5c {
+  display: flex;
+  align-items: center;
+  translate: 60px;
+}
+.container5c1 {
+  display: flex;
+  align-items: center;
+  translate: 60px;
+}
+
+.animation {
+  flex: 1;
+  margin-left: 200px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(50%);
+  transition: all 2s;
+  text-align: right;
+}
+
+.label {
+  flex: 1;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: left;
+  margin-right: 500px;
+}
+
+
+
+
+@media(prefers-reduced-motion){
+  .hidden {
+    transition: none;
+  }
+  .vector{
+    transition: none;
+  }
+  .hidden2 {
+    transition: none;
+  }
+
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+/*fin parallax*/
+
+/*---------------------Fin Seccion Labo----------------------------------*/
 
 
 /*----------------------Seccion Ozono-------------------------------*/
@@ -2131,6 +2304,109 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 
 
 /*---------------------Fin seccion Ozono---------------------------*/
+/*----------------------Seccion psicologia-------------------------------*/
+#psicologia1 {
+  background-image: url(../img/psicoback.png); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 1200px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#psicologia1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha (0.5 en este caso) para cambiar la opacidad */
+  z-index: -1;
+}
+
+
+.psico h1{
+  font-size: 70px;
+  color: #fff;
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  text-transform: none;
+  z-index: 2;
+
+}
+
+.psico h2{
+  font-size: 3rem;
+  color: var(--green);
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  text-transform: none;
+  text-decoration: underline;
+  z-index: 2;
+
+}
+
+
+.psico p{
+  text-transform: none;
+  padding-bottom: 3rem;
+  font-size: 25px;
+  color: #fff;
+  margin-left: 10px;
+  z-index: 2;
+}
+.psico span{
+  color: var(--green);
+  font-weight: bold;
+  z-index: 2;
+}
+
+
+.o2{
+
+  display: flex;
+  justify-content: space-between; /* Coloca el botón en el borde derecho */
+  background-color: #fff;
+  width: 700px;
+  max-height: 200px;
+  margin-left: 10rem;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  margin-top: 5rem;
+  position: relative;
+
+}
+.o2 h1{
+  display: block;
+  margin: 0 auto;
+  color: var(--green);
+  font-size: 10rem;
+  z-index: 2;
+}
+
+
+
+
+.o2 {
+  flex: 1;
+  margin-left: 45rem;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 2s;
+  text-align: center;
+}
+
+
+/*---------------------Fin seccion psicologia---------------------------*/
 /*---------------------Hospital de dia-----------------------------*/
 .infodia{
   display: flex;
@@ -3897,5 +4173,13 @@ footer{
   width: 100px;
   height: 100px;
   }
+
+.col-lg-1 img{
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin-top: 2rem;
+}
 
 }
