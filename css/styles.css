@@ -3422,6 +3422,10 @@ padding: 2rem;
       
       }
 
+      .map .mapaviejo{
+        display: none;
+      }
+
       }
 
 
@@ -3720,7 +3724,9 @@ font-size: 8px;
     
     }
 
-
+    .map .mapaviejo{
+      display: none;
+    }
 }
 
 
@@ -4180,6 +4186,10 @@ footer{
   width: 50px;
   height: 50px;
   margin-top: 2rem;
+}
+
+.map .mapaviejo{
+  display: none;
 }
 
 }
