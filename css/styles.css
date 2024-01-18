@@ -1602,9 +1602,6 @@ hr{
 
   }
 
-.planet{
-  color: #d35400  ;
-}
 
 .wave{
   display: block;
@@ -2212,6 +2209,156 @@ background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%,
 /*fin parallax*/
 
 /*---------------------Fin Seccion Labo----------------------------------*/
+/*---------------------Seccion estudios----------------------------------*/
+
+#estudios {
+  background-image: url(../img/studies.jpg); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 800px;
+  position: relative;
+  display: grid;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#estudios::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha (0.5 en este caso) para cambiar la opacidad */
+  z-index: -1;
+}
+
+
+.estudios h1{
+  font-size: 7rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  text-transform: none;
+  z-index: 2;
+
+}
+
+.estudios p{
+  text-transform: none;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  color: #fff;
+  z-index: 2;
+
+}
+.estudios span{
+  color: var(--green);
+  font-weight: bold;
+  text-transform: none;
+  text-align: center;
+  z-index: 2;
+}
+
+.estudios img{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  
+}
+
+
+.texto-animado {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  font-size: 25px;
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-transform: lowercase;
+  padding-bottom: 15rem;
+  
+  
+}
+
+
+
+.animation {
+  flex: 1;
+  margin-left: 200px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(50%);
+  transition: all 2s;
+  text-align: right;
+}
+
+.label {
+  flex: 1;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: left;
+  margin-right: 500px;
+}
+
+
+
+
+@media(prefers-reduced-motion){
+  .hidden {
+    transition: none;
+  }
+  .vector{
+    transition: none;
+  }
+  .hidden2 {
+    transition: none;
+  }
+
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------Fin Seccion estudios----------------------------------*/
 
 
 /*----------------------Seccion Ozono-------------------------------*/
@@ -3745,6 +3892,10 @@ padding: 2rem;
 
     }
 
+.header .navbar{
+  margin-top: 8rem;
+}
+
     .lottie{
       display: block;
       margin: 0 auto;
@@ -4065,6 +4216,7 @@ footer{
   width: 900px;
   transform: translateX(-48%);
   left: -800%;
+  
   
   
 }
