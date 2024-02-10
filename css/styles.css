@@ -4315,21 +4315,16 @@ footer{
 .dropdown-content {
   /* Estilos adicionales */
   max-height: auto;
-  
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
-  width: 900px;
-  
+  width: 500px;
   transform: translateX(-48%);
-  left: -800%;
-  
-  
-  
+  left: -400%;
 }
 .dropdown-content a {
   margin: 10px;
   transform: translateX(18%);
-  font-size: 2rem;
 }
 
 
