@@ -1,5 +1,6 @@
 document.getElementById('btn').addEventListener('click', function(event) {
-  event.preventDefault(); // Evitar el envío del formulario por defecto
+  // Evitar el envío del formulario por defecto
+  event.preventDefault();
 
   var name = document.getElementById('Nombre').value;
   var email = document.getElementById('email').value;
@@ -29,47 +30,53 @@ document.getElementById('btn').addEventListener('click', function(event) {
   });
 
   var errorMessage = document.getElementById('errorMessage');
-  if (isValid && email.match(emailRegex)) {
-    var btn = document.getElementById("btn");
+  var btn = document.getElementById("btn");
+  var originalColor = btn.style.color; // Almacenar el color original del botón
 
-    // Reemplaza el texto del botón por la animación mientras se envía el mensaje
+  if (isValid && email.match(emailRegex)) {
+    // Reemplazar el texto del botón por la animación mientras se envía el mensaje
     btn.innerHTML = '<span><i class="fa-solid fa-circle-notch fa-spin"></i></span>';
+    btn.style.backgroundColor = originalColor; // Restablecer el color original del botón
 
     var body = 'Nombre: ' + name + '<br/> email: ' + email + '<br/> Asunto: ' + subject + '<br/> Mensaje: ' + message;
 
     Email.send({
-      SecureToken: "2fd5a4c5-0e3f-4e3f-aabc-e7953f57cff5",
-      To: 'nacho.reynoso@yahoo.com.ar',
-      From: "nacho.pgnp@gmail.com",
+      SecureToken: "77199b6c-ed29-4201-b58b-636dec47c574",
+      To: 'consultas@inasmed.com.ar',
+      From: "inasmedinfo@gmail.com",
       Subject: "Mensaje de contacto",
       Body: body
     }).then(function(message) {
       // ... Código para manejar el envío del mensaje ...
 
-      // Reemplaza el texto del botón por el mensaje "Mensaje Enviado!"
+      // Reemplazar el texto del botón por el mensaje "Mensaje Enviado!" y cambiar el color
       btn.innerHTML = 'Mensaje Enviado!';
+      btn.style.backgroundColor = '#2ecc71';
 
       resetForm();
 
-      // Vuelve a establecer el texto original del botón después de 3 segundos
+      // Volver a establecer el texto original del botón y color después de 3 segundos
       setTimeout(function() {
         btn.innerHTML = '<span>Enviar <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i></span>';
+        btn.style.backgroundColor = originalColor; // Restablecer el color original del botón
       }, 3000);
     });
   } else {
     errorMessage.textContent = 'Complete el formulario!';
 
-    var btn = document.getElementById("btn");
+    // Cambiar el color del botón en caso de error
+    btn.style.backgroundColor = '#922b21';
 
     // Guardar el contenido original del botón
     var originalContent = btn.innerHTML;
 
     // Mostrar el mensaje de error dentro del botón
-    btn.innerHTML = '<span>' + errorMessage.textContent + '</span>';
+    btn.innerHTML = '<span style="color: white;">' + errorMessage.textContent + '</span>';
 
     // Ocultar el mensaje de error después de 3 segundos
     setTimeout(function() {
       btn.innerHTML = originalContent; // Restablecer el contenido original del botón
+      btn.style.backgroundColor = originalColor; // Restablecer el color original del botón
     }, 3000);
   }
 });

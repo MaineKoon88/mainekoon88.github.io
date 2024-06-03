@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const hiddenElements = document.querySelectorAll('.hidden, .hidden2, .hiddena, .hiddenb, .aneu1, .aneu2, .container5c, .container5c1, .label, .animation');
+  const hiddenElements = document.querySelectorAll('.hidden, .hiddenkinesio, .hidden2, .hiddena, .hiddenb, .aneu1, .aneu2, .container5c, .container5c1, .label, .animation');
   hiddenElements.forEach((el) => observer.observe(el));
 });

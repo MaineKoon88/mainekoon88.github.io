@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>INAS</title>
+    <link rel="icon" href="../img/favicon2.png">
+    
+    <!--whatsapp-->
+    
+    
+    <!--bootstrap-->
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    
+
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Eb2NfycMBet1Ki5zK4TfMT12+j5SCddwjapD6/mDjcL2iKpAIQaE+XUNe8jbPrDyQgqfu7d7U1Q9wYVJCBbvPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!--inicio header-->
+
+    <header class="header">
+
+        <a href="../blog.html" class="logo-container" >
+            <img src="../img/inasblog.png" alt="logo INAS"  class="logoblog">
+            </a>
+        
+    
+        <nav class="navbar">
+            <a href="index.html" class="nav-item">Inicio</a>
+            <a href="#servicios" class="nav-item">Servicios</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                  <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                </button>
+                <div class="dropdown-content">
+                  <a href="neuro.html">Neurología</a>
+                  <a href="psyc.html">Neuropsiquiatría</a>
+                  <a href="psico.html">Psicología</a>
+                  <a href="./construct/estudios.html">Estudios</a>
+                  <a href="labo.html">Laboratorio</a>
+                  <a href="./construct/estudios.html">Ozonoterapia</a>
+                  <a href="dia.html">Hospital de Dia</a>
+                  <a href="./construct/estudios.html">Kinesiología</a>
+                </div>
+              </div>
+            
+        </nav>
+          
+    
+    <div id="menu-btn" class="fas fa-bars"></div>
+    
+    
+    
+    </header>
+
+
+<!--fin header-->
+
+
+<!--Inicio Home-->
+
+<section class="posteo" id="posteo" style="padding-top: 25rem; ">
+    
+    
+
+
+
+    <div class="contentpost" style="padding-bottom: 5rem;">
+        <h3 id="post-title" style="text-align: center;">Posteo prueba</h3>
+        <p style="text-align: center;">Primer post de prueba para ver funciones</p>
+        <p style="text-align: center;">Compartir en:</p>
+        <div class="share-buttons-wrapper" style="text-align: center; margin-bottom: 2rem;">
+            <button class="share-button" onclick="shareOnFacebook()"><i class="fa-brands fa-facebook"></i></button>
+            <button class="share-button" onclick="shareOnTwitter()"><i class="fa-brands fa-x-twitter"></i></button>
+            <button class="share-button" onclick="shareOnLinkedIn()"><i class="fa-brands fa-linkedin-in"></i></button>
+        </div>
+        
+    </div>
+    
+    
+    
+
+
+</section>
+
+
+<!--Nuestro equipo de profesionales está preparado para atender distintas enfermedades neurológicas y psiquiatricas como epilepsia, accidentes cerebrovasculares (ACV), Alzheimer, Dolor, Depresion, Ansiedad , Trastorno de personalidad  entre otras.-->
+
+<!--Fin Home-->
+
+<div class="post" id="post">
+    <h1 style="font-size: 4rem; padding-bottom: 5rem;">Primer post info</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora magnam optio iste cumque minima alias labore, unde veritatis, corrupti, repellat dolores maiores asperiores? Asperiores culpa molestiae ducimus repellat, tempora at?</p>       
+        
+
+    
+</div>
+<br>
+<br>
+<div class="comments">
+    <h2>Comentar:</h2>
+    <form id="commentForm" onsubmit="addComment(event)">
+        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem;" autocapitalize="none">
+        <hr>
+        <textarea id="commentText" placeholder="Tu comentario" required style="padding: 0.5rem; margin-bottom: 0.5rem;" autocapitalize="none"></textarea>
+        <hr>
+        <button id="submitCommentButton" type="submit">Enviar</button>
+    </form>
+    <div id="commentsContainer"></div>
+</div>
+
+<!-- Formulario de inicio de sesión del administrador -->
+<div id="adminLoginForm" style="display: none;">
+    <input type="password" id="adminPassword" placeholder="Contraseña de admin" style="padding: 0.5rem; margin-bottom: 0.5rem;">
+    <button onclick="loginAsAdmin()" style="background-color: #2ecc71; padding: 1rem; color: white; border: none; cursor: pointer;">Iniciar sesión</button>
+</div>
+<button id="adminLoginBtn" style="background-color: #3498db; padding: 1rem; color: white; border: none; cursor: pointer;">Admin Login</button>
+
+
+
+</div>
+<hr>
+<!--footer-->
+<div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#neuro.html">Neurología</a></li>
+                        <li><a href="#">Psiquiatría</a></li>
+                        <li><a href="#">Psicología</a></li>
+                        <li><a href="#">Estudios</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Quienes somos</h3>
+                    <ul>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#team">Equipo</a></li>
+                        <li><a href="#nosotros">Misión</a></li>
+                        <li><a href="#maps">Dirección</a></li>
+                    </ul>
+                </div>
+<!--
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Profesionales</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </div>
+-->
+                <div class="col-lg-3 item social">
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-instagram"></i></a>
+                </div>
+                <div class="col-lg-1 offset-lg-10 item social">
+                    <img src="../img/INAS2bk.png" alt="" style="width: 100px; height: 100px; border: 2px solid grey; border-radius: 50%;" class="logobk">
+                </div>
+                <div class="col-12 rights">
+                    <hr>
+                    <p class="copyright">nach_os © 2024 <i class="fa-solid fa-ghost" style="color: red ;"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--Whatsapp-->
+<a href="https://wa.me/5491133516604/?text=Hola!%20Quiero%20más%20información!" target="_blank" class="fab">
+    <img src="../img/wplogo3.png" width="70" height="70">
+ </a>
+
+
+
+
+</body>
+<script src="../js/script.js"></script>
+<script src="../js/nav.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../js/rotate.js"></script>
+<script src="../js/scrolldrop.js"></script>
+<script src="../js/active.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/logo.js"></script>
+<script src="../js/parallaxozono.js"></script>
+<script src="../js/share.js"></script>
+<script src="../js/admin.js"></script>
+<script src="../js/sharepost.js"></script>
+<script src="https://kit.fontawesome.com/0944d644bd.js" crossorigin="anonymous"></script>
+</html>
+
+
+
+
+
