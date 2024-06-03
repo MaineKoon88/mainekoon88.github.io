@@ -3359,7 +3359,7 @@ h1 {
   align-items: flex-end;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 5em -1em black;
+  box-shadow: 0 0 3em -1em black;
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
@@ -3432,15 +3432,17 @@ h1 {
 }
 
 .blogcard:before {
-  background: #ddd;
+  background: linear-gradient(135deg, #2ecc71, #2471a3, #17202a);
   width: 250%;
   height: 250%;
+  opacity: 0.6; /* Ajusta la opacidad aquí según sea necesario */
 }
 
 .blogcard:after {
-  background: white;
+  background: rgba(255, 255, 255, 0.5); /* Cambiado a rgba para la transparencia */
   width: 200%;
   height: 200%;
+  opacity: 0.5; /* Ajusta la opacidad aquí según sea necesario */
 }
 
 .blogcard:hover {
@@ -3605,7 +3607,7 @@ color: var(--green);
   line-height: 1.8;
   padding: 1rem 0;
   text-align: left;
-  text-transform:initial;
+  text-transform:none;
  
 }
 
@@ -3667,7 +3669,7 @@ transition: 0.5s ease-in-out;
 }
 #commentsContainer {
   margin-top: 1rem;
-  text-transform: none;
+  text-transform:inherit;
   font-size: 2rem;
 }
 
@@ -3689,6 +3691,10 @@ transition: 0.5s ease-in-out;
 
 .logoblog{
   height: 120px;
+}
+#charCount{
+  text-align: right;
+  font-weight: bold;
 }
 /*---------------------Fin seccion posts---------------------------*/
 
@@ -5103,6 +5109,10 @@ footer{
     margin-left: 0;
     text-align: center;
   }
+  .comments{
+    display: block;
+    width: fit-content;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -5122,4 +5132,10 @@ footer{
   .info h1 {
     margin: 0;
   }
+
+  .comments{
+    display: block;
+    width: fit-content;
+  }
+
 }

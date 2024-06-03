@@ -3,8 +3,8 @@ let isAdmin = false;
 // Función para añadir un comentario
 function addComment(event) {
     event.preventDefault();
-    const email = document.getElementById('commentEmail').value;
-    const commentText = document.getElementById('commentText').value;
+    const email = document.getElementById('commentEmail').value.trim();
+    const commentText = document.getElementById('commentText').value.trim();
     const date = new Date().toLocaleString();
 
     if (!validateEmail(email)) {
@@ -52,7 +52,7 @@ function renderComments() {
             commentElement.appendChild(deleteButton);
         }
         commentsContainer.appendChild(commentElement);
-        
+
         // Agrega una línea divisoria después de cada comentario, excepto el último
         if (index < comments.length - 1) {
             const divider = document.createElement('hr');
@@ -72,7 +72,20 @@ function deleteComment(index) {
 // Inicializa los comentarios cuando la página se carga
 document.addEventListener('DOMContentLoaded', (event) => {
     renderComments();
+    document.getElementById('commentText').addEventListener('input', updateCharCount);
+    document.getElementById('adminPassword').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            loginAsAdmin();
+        }
+    });
 });
+
+// Función para actualizar el contador de caracteres
+function updateCharCount() {
+    const commentText = document.getElementById('commentText').value;
+    const charCount = document.getElementById('charCount');
+    charCount.textContent = `${commentText.length}/300`;
+}
 
 // Función para iniciar sesión como administrador
 function loginAsAdmin() {

@@ -112,28 +112,34 @@
 </div>
 <br>
 <br>
-<div class="comments">
+<div class="comments" >
     <h2>Comentar:</h2>
     <form id="commentForm" onsubmit="addComment(event)">
-        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem;" autocapitalize="none">
+        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform: initial;" autocapitalize="none">
         <hr>
-        <textarea id="commentText" placeholder="Tu comentario" required style="padding: 0.5rem; margin-bottom: 0.5rem;" autocapitalize="none"></textarea>
+        <textarea id="commentText" placeholder="Tu comentario (máx. 300 caracteres)" maxlength="300" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform: initial; resize:none;" autocapitalize="none"></textarea>
+        <div id="charCount">0/300</div>
         <hr>
         <button id="submitCommentButton" type="submit">Enviar</button>
     </form>
-    <div id="commentsContainer"></div>
+    <br>
+    <h2>Comentarios:</h2>
+    <hr>
+    <div id="commentsContainer" style="text-transform: initial;" autocapitalize="none"></div>
 </div>
 
-<!-- Formulario de inicio de sesión del administrador -->
+<!-- Formulario de inicio de sesión del administrador--> 
 <div id="adminLoginForm" style="display: none;">
     <input type="password" id="adminPassword" placeholder="Contraseña de admin" style="padding: 0.5rem; margin-bottom: 0.5rem;">
-    <button onclick="loginAsAdmin()" style="background-color: #2ecc71; padding: 1rem; color: white; border: none; cursor: pointer;">Iniciar sesión</button>
+    <button onclick="loginAsAdmin()" style="background-color: #2ecc71; padding: 1rem; color: white; border: none; cursor: pointer; border-radius: 5px;">Iniciar sesión</button>
 </div>
-<button id="adminLoginBtn" style="background-color: #3498db; padding: 1rem; color: white; border: none; cursor: pointer;">Admin Login</button>
+<button id="adminLoginBtn" style="background-color: #3498db; padding: 1rem; color: white; border: none; cursor: pointer; "><i class="fa fa-user-circle" aria-hidden="true"></i>
+</button>
 
 
 
 </div>
+
 <hr>
 <!--footer-->
 <div class="footer-clean">
