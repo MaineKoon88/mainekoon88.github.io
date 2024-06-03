@@ -11,6 +11,10 @@
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.5rem .5rem 0 rgba(0, 0, 0, .2);
     --border:.2rem solid var(--blue);
+    --surface-color: #fff;
+    --curve: 40;
+    --color: #3c3163;
+    --transition-time: 0.5s;
     
 
 
@@ -229,16 +233,19 @@ display: none;
   z-index: 1;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
-  width: 20rem;
+  width: 25rem;
   height: 55rem;
   background: #fff;
   border: var(--border);
-  text-align: center;
   opacity: 1;
   transform: scale(1);
   transform: translateY(12px);
   transform: translateX(-80px);
   transition: 0.5s ease-in-out;
+}
+
+.dropdown-content .last-item{
+  display: none;
 }
 
 .dropdown.show .dropdown-content {
@@ -254,11 +261,7 @@ display: none;
   color: var(--blue);
 }
 
-.dropbtn:hover{
-  transform:rotate(180deg);
-  
 
-}
 
 .dropdown:hover .dropdown-content,
 .dropdown .dropbtn:focus + .dropdown-content {
@@ -291,7 +294,7 @@ display: none;
 }
 
 .header .navbar a{
-
+    text-align: center;
     font-size: 1.8rem;
     color: var(--blue);
     margin-left: 3rem;
@@ -508,6 +511,33 @@ background: var(--green);
 transition: .1s ease-in-out;
 
 }
+.btn2{
+  background: var(--blue);
+  display: inline-block;
+  height: 4.5rem;
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  border: var(--border);
+  border-radius: 25px;
+  box-shadow: var(--box-shadow);
+  color: var(--lightgrey);
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: none;
+  transition: .1s ease-in-out;
+
+
+}
+
+.btn2:hover{
+color: #fff;
+background: var(--green);
+transition: .1s ease-in-out;
+text-decoration: none;
+border: var(--green);
+
+}
 /*servicios*/
 
 
@@ -615,12 +645,12 @@ transition: .1s ease-in-out;
 .cards {
   
   position: relative;
-  width: 260px;
+  width: 230px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
   padding: 16px;
-  margin: 0 10px; /* Espacio entre las tarjetas */
+  margin: 0 5px; /* Espacio entre las tarjetas */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -648,7 +678,7 @@ transition: .1s ease-in-out;
 
 .names {
   padding-top: 10rem;
-  font-size: 18px;
+  font-size: 15px;
   color: #333;
   font-weight: bold;
   letter-spacing: 0.8px;
@@ -3057,9 +3087,610 @@ color: var(--green);
 }
 
 /*-------------------------Fin Psiquiatria--------------------------------*/
+/*---------------------Seccion Kinesio----------------------------------*/
+
+#kinesio {
+  background-image: url(../img/kinesiowall.jpg); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 1500px;
+  position: relative;
+  display: grid;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  text-align: center;
+}
+
+#kinesio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha (0.5 en este caso) para cambiar la opacidad */
+  z-index: -1;
+}
+
+.kinesio h1{
+  font-size: 70px;
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  text-transform: none;
+
+}
+
+.kinesio p{
+  text-transform: none;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.kinesio span{
+  color: var(--green);
+  font-weight: bold;
+}
 
 
 
+.claro {
+  
+  background-color:  #d35400 ;
+}
+
+.contenido {
+  background: rgb(23,32,42);
+background: linear-gradient(180deg, rgba(23,32,42,1) 0%, rgba(36,113,163,1) 50%, rgba(255,255,255,1) 100%); 
+  padding: 40px;
+  text-align: center;
+}
+
+.texto-animado {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  font-size: 25px;
+}
+
+
+.hiddenkinesio {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-transform: lowercase;
+  color: #fff;
+  font-size: 2rem;
+  
+  
+}
+
+.hidden2 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-transform: lowercase;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  
+}
+
+.aneu1{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: center;
+  
+}
+
+.aneu2{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: center;
+  
+}
+
+
+
+.container5c {
+  display: flex;
+  align-items: center;
+  translate: 60px;
+}
+.container5c1 {
+  display: flex;
+  align-items: center;
+  translate: 60px;
+}
+
+.animation {
+  flex: 1;
+  margin-left: 200px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(50%);
+  transition: all 2s;
+  text-align: right;
+}
+
+.label {
+  flex: 1;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  text-align: left;
+  margin-right: 500px;
+}
+
+
+
+
+@media(prefers-reduced-motion){
+  .hidden {
+    transition: none;
+  }
+  .vector{
+    transition: none;
+  }
+  .hidden2 {
+    transition: none;
+  }
+
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+.sectionkin {
+  
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg1 {
+  text-align: left;
+  color: var(--black);
+  background-color: #fff;
+  width: 600px;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 30px;
+
+}
+.bg2 {
+  background-color: #333;
+  margin-bottom: 30px;
+  width: 600px;
+  margin-top: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+.spacer {
+  height: 50vh;
+  background-color: #000;
+}
+
+
+
+
+/*fin parallax*/
+
+/*---------------------Fin Seccion Kinesio----------------------------------*/
+/*---------------------Inicio Seccion Blog----------------------------------*/
+.home .blog{
+  padding-top: 15rem;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url(../img/blog.jpg);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.home .blog h1{
+  font-size: 5rem;
+  text-align: center;
+  color: var(--lightgrey);
+}
+.home .blog span{
+  color: var(--green);
+}
+
+.home .blog p{
+  font-size: 2rem;
+  text-align: center;
+  text-transform: none;
+  margin-top: 3rem;
+  color: var(--lightgrey);
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.blogcard {
+  font-family: 'Poppins', sans-serif;
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 25em;
+  width: 20em;
+  font-size: 2em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+.blogcard:hover {
+  transform: rotate(0);
+}
+
+.blogcard h1 {
+  margin: 0;
+  padding-top: 25rem;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: none;
+
+}
+
+.blogcard p {
+  font-size: 0.75em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+  text-transform: none;
+}
+
+.blogcard .tags {
+  display: flex;
+}
+
+.blogcard .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.blogcard:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.blogcard .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.blogcard:before, .blogcard:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.blogcard:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.blogcard:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.blogcard:hover {
+  color: var(--color);
+}
+
+.blogcard:hover:before, .blogcard:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+
+
+/* Estilo para centrar y aumentar el tamaño de los botones de paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem; /* Aumentar el tamaño del texto */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.pagination button {
+  margin: 0 10px; /* Espaciado entre botones */
+}
+
+#pageIndicator {
+  margin: 0 10px; /* Espaciado entre el indicador de página */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.search-bar {
+  width: 300px; /* Ajusta el ancho del buscador según sea necesario */
+}
+
+/* Estilos adicionales para el buscador */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #635f5f;
+}
+
+
+/*---------------------Fin Seccion Blog----------------------------------*/
+
+/*----------------------Seccion posts-------------------------------*/
+#post {
+  background-image: url(../img/bgposteos.jpg); /* Reemplaza con la URL de tu imagen de fondo */
+  min-height: 1200px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+
+
+.post h1{
+  font-size: 70px;
+  color: var(--black);
+  padding-bottom: 15rem;
+  padding-top: 3rem;
+  margin-left: 40px;
+  text-transform: none;
+  z-index: 2;
+
+}
+
+.post h2{
+  font-size: 3rem;
+  color: var(--green);
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  text-transform: none;
+  text-decoration: underline;
+  z-index: 2;
+
+}
+
+
+.post p{
+  text-align: left;
+  text-transform: none;
+  padding-bottom: 3rem;
+  font-size: 25px;
+  color: var(--black);
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 2;
+}
+.post span{
+  color: var(--black);
+  font-weight: bold;
+  z-index: 2;
+}
+
+
+.share-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  
+}
+.share-button {
+  margin-right: 10px; /* Ajusta el valor según el espacio que desees */
+}
+
+
+.posteo{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  background-color: var(--black);
+  }
+
+.posteo .contentpost{
+  flex:1 1 45rem ;
+  padding-top: 5rem;
+ background-image: url(../img/neuroback.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 10px;
+  
+}
+
+.posteo .contentpost h3{
+  font-size: 5rem ;
+  color: var(--black);
+  line-height: 1.8;
+  text-transform: uppercase;
+ 
+}
+
+.posteo .contentpost span{
+
+text-transform: uppercase;
+color: var(--green);
+
+}
+
+.posteo .contentpost p{
+  font-size: 2rem ;
+  color: var(--black);
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-align: left;
+  text-transform:initial;
+ 
+}
+
+.comments {
+  /* Estilos para los comentarios */
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #141414;
+  text-transform: none;
+  padding: 10px;
+  border: 1px solid #1a1919;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid #1b1a1a; /* Añade un borde inferior a todos los comentarios */
+}
+
+.comments:last-child {
+  border-bottom: none; /* Elimina el borde inferior del último comentario */
+}
+
+#commentForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+#commentEmail, #commentText {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+#commentText {
+  height: 100px;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+#submitCommentButton {
+  padding: 10px 20px;
+  font-size: 2rem;
+  width: 300px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+#submitCommentButton:hover{
+background-color: var(--green);
+transition: 0.5s ease-in-out;
+}
+#commentsContainer {
+  margin-top: 1rem;
+  text-transform: none;
+  font-size: 2rem;
+}
+
+
+
+
+.custom-share-buttons-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.custom-share-button {
+  margin: 0 10px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.logoblog{
+  height: 120px;
+}
+/*---------------------Fin seccion posts---------------------------*/
 
 
 
@@ -3141,7 +3772,7 @@ color: var(--green);
 
 
 
-@media (max-width:1300px) {
+@media(max-width:1330px){
   html{
     font-size: 55%;
     overflow-x: hidden;
@@ -3216,10 +3847,10 @@ padding: 2rem;
   
 }
 
-.logo2{
-display: block;
-width: 200px;
-height: 80px;
+.logo3{
+
+transform: translateX(80px);
+size: 50%;
 }
 
 .lottie{
@@ -3268,13 +3899,6 @@ height: 80px;
   }
 
 
-  .cards{
-    display: block;
-    margin: 0 auto;
-    margin-top: 120px;
-    margin-bottom: 5rem;
-    
-  }
   .parallax{
     display: block;
     text-align: center;
@@ -3339,6 +3963,13 @@ height: 80px;
     padding-right: 2rem;
     display: block;
     margin: 0 auto;
+  }
+  .cards{
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 5rem;
+    
   }
   
 
@@ -3517,11 +4148,7 @@ padding: 2rem;
           padding-top: 50px;
         }
 
-        .container-staff{
- 
-          padding-left: 0;
         
-      }
 
 
       
@@ -3758,13 +4385,13 @@ padding: 2rem;
 }
 
 .header .navbar a{
-
-    font-size: 4rem;
+    font-size: 2rem;
     display:block;
     margin:50px 0;
     left: -100% ;
-
 }
+
+
 
 
 .fab{
@@ -4315,23 +4942,18 @@ footer{
 .dropdown-content {
   /* Estilos adicionales */
   max-height: auto;
-  
   overflow-x: hidden;
   padding: 0;
   width: 900px;
-  
   transform: translateX(-48%);
   left: -800%;
 
-  
-  
-  
 }
 .dropdown-content a {
   margin: 10px;
   transform: translateX(18%);
-  
-}
+  }
+
 
 
 .intro1{
@@ -4452,4 +5074,52 @@ footer{
   display: none;
 }
 
+
+}
+
+
+
+
+
+
+
+/*blog cards*/
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space .num {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .blogcard {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
 }
