@@ -3566,50 +3566,58 @@ h1 {
 }
 
 
-.posteo{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 10rem;
-  background-color: var(--black);
-  }
-
-.posteo .contentpost{
-  flex:1 1 45rem ;
+.posteo .contentpost {
+  position: relative;
+  flex: 1 1 45rem;
   padding-top: 5rem;
- background-image: url(../img/neuroback.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- border-radius: 10px;
-  
+  padding-bottom: 5rem;
+  background-image: url(../img/neuroback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
-.posteo .contentpost h3{
-  font-size: 5rem ;
-  color: var(--black);
+.posteo .contentpost::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Degradado de negro a transparente */
+  border-radius: 10px;
+  z-index: 1;
+  pointer-events: none; /* Asegura que el pseudo-elemento no interfiera con los clics */
+}
+
+.posteo .contentpost h3,
+.posteo .contentpost p,
+.custom-share-buttons-wrapper {
+  position: relative;
+  z-index: 2;
+  color: var(--lightgrey);
+  text-align: left; /* Alinea el texto y botones a la izquierda */
+  margin-left: 2rem; /* Añade un margen izquierdo */
+}
+
+.posteo .contentpost h3 {
+  font-size: 5rem;
   line-height: 1.8;
   text-transform: uppercase;
- 
 }
 
-.posteo .contentpost span{
-
-text-transform: uppercase;
-color: var(--green);
-
+.posteo .contentpost span {
+  text-transform: uppercase;
+  color: var(--green);
 }
 
-.posteo .contentpost p{
-  font-size: 2rem ;
-  color: var(--black);
+.posteo .contentpost p {
+  font-size: 2rem;
   line-height: 1.8;
   padding: 1rem 0;
-  text-align: left;
-  text-transform:none;
- 
+  text-transform: none;
 }
+
 
 .comments {
   /* Estilos para los comentarios */
@@ -3676,17 +3684,26 @@ transition: 0.5s ease-in-out;
 
 
 
-.custom-share-buttons-wrapper {
-  text-align: center;
+.share-buttons-wrapper {
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  align-self: left;
+  text-align: left;
   margin-bottom: 2rem;
+  margin-left: 4rem;
 }
 
-.custom-share-button {
+.share-button {
   margin: 0 10px;
   font-size: 24px;
   border: none;
   background: none;
   cursor: pointer;
+  text-align: left;
+  color: var(--lightgrey); /* Asegura que los íconos sean visibles */
+  position: relative;
+  z-index: 2;
 }
 
 .logoblog{
