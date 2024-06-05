@@ -33,11 +33,10 @@
     
     <!--inicio header-->
 
-    <header class="header">
+    <header class="header" style="background-color:#212529; ">
 
-        <a href="#home" class="logo-container" >
-            <img src="../img/INASbk.png" alt="logo INAS"  class="logo1" />
-            <img src="../img/INAS2.png" alt="logo pequeño" class="logo3">
+        <a href="../blog.html" class="logo-container" >
+            <img src="../img/inasblogbk.png" alt="logo INAS"  class="logoblog">
             </a>
         
     
@@ -75,17 +74,18 @@
 
 <!--Inicio Home-->
 
-<section class="posteo" id="posteo" style="padding-top: 25rem; ">
+<section class="posteo" id="posteo" style="padding-top: 25rem;  ">
     
     
 
 
 
-    <div class="contentpost" style="padding-bottom: 5rem;">
-        <h3 id="post-title" style="text-align: center;">Posteo prueba</h3>
-        <p style="text-align: center;">Primer post de prueba para ver funciones</p>
-        <p style="text-align: center;">Compartir en:</p>
-        <div class="share-buttons-wrapper" style="text-align: center; margin-bottom: 2rem;">
+    <div class="contentpost" style="padding-bottom: 5rem; background-image:url(../img/kinesiowall.jpg);">
+        <p style="text-align: left; font-size: 12px;">6/04/2024</p>
+        <h3 id="post-title" style="text-align: left;">Posteo prueba</h3>
+        <p style="text-align: left;">Primer post de prueba para ver funciones</p>
+        <p style="text-align: left;">Compartir en:</p>
+        <div class="share-buttons-wrapper" style="margin-bottom: 2rem;">
             <button class="share-button" onclick="shareOnFacebook()"><i class="fa-brands fa-facebook"></i></button>
             <button class="share-button" onclick="shareOnTwitter()"><i class="fa-brands fa-x-twitter"></i></button>
             <button class="share-button" onclick="shareOnLinkedIn()"><i class="fa-brands fa-linkedin-in"></i></button>
@@ -111,30 +111,33 @@
 
     
 </div>
-
+<br>
+<br>
 <div class="comments">
     <h2>Comentar:</h2>
     <form id="commentForm" onsubmit="addComment(event)">
-        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem;">
+        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform:lowercase;" autocapitalize="none">
         <hr>
-        <textarea id="commentText" placeholder="Tu comentario" required style="padding: 0.5rem; margin-bottom: 0.5rem;"></textarea>
+        <textarea id="commentText" placeholder="Tu comentario (máx. 300 caracteres)" maxlength="300" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform:lowercase; resize:none;" autocapitalize="none"></textarea>
+        <div id="charCount">0/300</div>
         <hr>
         <button id="submitCommentButton" type="submit">Enviar</button>
     </form>
-    <div id="commentsContainer"></div>
+    <br>
+    <h2>Comentarios:</h2>
+    <hr>
+    <div id="commentsContainer" style="text-transform:lowercase;" autocapitalize="none"></div>
 </div>
 
-<!-- Formulario de inicio de sesión del administrador -->
+<!-- Formulario de inicio de sesión del administrador--> 
 <div id="adminLoginForm" style="display: none;">
     <input type="password" id="adminPassword" placeholder="Contraseña de admin" style="padding: 0.5rem; margin-bottom: 0.5rem;">
-    <button onclick="loginAsAdmin()" style="background-color: #2ecc71; padding: 1rem; color: white; border: none; cursor: pointer;">Iniciar sesión</button>
+    <button onclick="loginAsAdmin()" style="background-color: #2ecc71; padding: 1rem; color: white; border: none; cursor: pointer; border-radius: 5px;">Iniciar sesión</button>
 </div>
-<button id="adminLoginBtn" style="background-color: #3498db; padding: 1rem; color: white; border: none; cursor: pointer;">Admin Login</button>
+<button id="adminLoginBtn" style="background-color: #3498db; padding: 1rem; color: white; border: none; cursor: pointer;"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
 
 
-
-</div>
-
+<hr>
 <!--footer-->
 <div class="footer-clean">
     <footer>
@@ -207,6 +210,7 @@
 <script src="../js/parallaxozono.js"></script>
 <script src="../js/share.js"></script>
 <script src="../js/admin.js"></script>
+<script src="../js/sharepost.js"></script>
 <script src="https://kit.fontawesome.com/0944d644bd.js" crossorigin="anonymous"></script>
 </html>
 

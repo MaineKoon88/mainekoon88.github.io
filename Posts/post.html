@@ -80,7 +80,7 @@
 
 
 
-    <div class="contentpost" style="padding-bottom: 5rem;">
+    <div class="contentpost" style="padding-bottom: 5rem; background-image:url(../img/neuroback.jpg); ">
         <p style="text-align: left; font-size: 12px;">6/04/2024</p>
         <h3 id="post-title" style="text-align: left;">Posteo prueba</h3>
         <p style="text-align: left;">Primer post de prueba para ver funciones</p>
@@ -116,9 +116,9 @@
 <div class="comments">
     <h2>Comentar:</h2>
     <form id="commentForm" onsubmit="addComment(event)">
-        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform: initial;" autocapitalize="none">
+        <input type="email" id="commentEmail" placeholder="Tu email" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform:lowercase;" autocapitalize="none">
         <hr>
-        <textarea id="commentText" placeholder="Tu comentario (máx. 300 caracteres)" maxlength="300" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform: initial; resize:none;" autocapitalize="none"></textarea>
+        <textarea id="commentText" placeholder="Tu comentario (máx. 300 caracteres)" maxlength="300" required style="padding: 0.5rem; margin-bottom: 0.5rem; text-transform:lowercase; resize:none;" autocapitalize="none"></textarea>
         <div id="charCount">0/300</div>
         <hr>
         <button id="submitCommentButton" type="submit">Enviar</button>
@@ -126,7 +126,7 @@
     <br>
     <h2>Comentarios:</h2>
     <hr>
-    <div id="commentsContainer" style="text-transform: initial;" autocapitalize="none"></div>
+    <div id="commentsContainer" style="text-transform:lowercase;" autocapitalize="none"></div>
 </div>
 
 <!-- Formulario de inicio de sesión del administrador--> 
